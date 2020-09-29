@@ -1,0 +1,800 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Classes Auxiliares*/
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+
+
+}
+
+.clear{clear:both;}
+
+
+.w60{
+	width: 60%;
+	float: left;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+.w40{
+	width: 40%;
+	float: left;
+}
+
+.w33{
+	float: left;
+	width: 33.3%;
+}
+
+.center{text-align: center;}
+
+
+/* Classes do site*/
+
+header{
+	padding: 8px 0;
+}
+
+
+.logo{
+	float: left;
+
+}
+
+.logo h2{
+	font-weight: normal;
+	font-size: 23px;
+}
+
+.logo a{
+	color: black;
+	text-decoration: none;
+}
+
+
+nav.menu-mobile{
+	display: none;
+	float: right;
+}
+
+nav.menu-mobile h2{
+	cursor: pointer;
+}
+
+nav.menu-mobile ul {
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+
+}
+
+nav.menu-mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu-mobile li.selected{
+	font-weight: bold;
+	background: rgb(225,225,225);
+}
+
+
+
+nav.menu-desktop li.selected{font-weight: bold; }
+
+nav.menu-desktop{
+	float: right;
+}
+
+nav.menu-desktop ul{
+	position: relative;
+	top: 8px;
+}
+
+nav.menu-desktop li{
+	padding: 0 10px;
+	display: inline-block;
+	font-weight: lighter;
+}
+
+nav.menu-desktop a{
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu-desktop a:hover{text-decoration: underline;}
+
+
+/*Sessão MAIN*/
+
+section.main-bg{
+	position: relative;
+	width: 100%;
+	padding: 100px 0;
+	background: url('../images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section.main-bg > .container{
+	position: relative;
+	z-index: 2;
+}
+
+.overlay{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+
+	
+}
+
+section.main-bg h2{
+		text-align: center;
+		color: #52aaa7;
+		font-size: 40px;
+		font-weight: normal;
+
+}
+
+section.main-bg p{
+	color: white;
+	font-size: 17px;
+	margin-top: 15px;
+	text-align: justify;
+
+}
+
+/* Diferenciais*/
+
+section.diferenciais{
+	padding: 30px 0;
+	text-align: center;
+
+
+}
+
+.line-text{
+	position: relative;
+	display: inline-block;
+	color: #52aaa7;
+	
+}
+
+.line-text div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 3px;
+	background: #52aaa7; 
+}
+
+.line-text h2{
+	font-weight: normal;
+	font-style: 27px;
+}
+
+.icones-diferenciais{
+	margin-top: 35px;
+
+}
+
+
+.box-icone-single{
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+
+
+
+}
+
+.box-icone-single h2{
+	color: #8a6b62;
+	font-size: 40px;
+}
+
+.box-icone-single p{
+	color: #646464;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+
+section.sobre-equipe{
+	padding: 30px 0;
+	background: rgb(225,225,225);
+
+
+
+}
+
+section.sobre-equipe > .container{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.equipe-container{
+	width: 50%;
+}
+
+.sobre-container{
+	width: 50%;
+}
+
+.sobre-container p{
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+
+/* SOBRE / EQUIPE*/
+
+.avatar-box{
+	margin-top: 15px;
+}
+
+.img-avatar{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-size: 100% 100%;
+}
+
+.descricao-avatar{
+	padding: 0 10px;
+	width: calc(100% - 70px);
+	display: inline-block;
+}
+
+.descricao-avatar h3{
+	color: rgb(30,30,30);
+	font-weight: normal;
+	font-style: italic;
+
+}
+
+.descricao-avatar p{
+	color: rgb(30,30,30);
+	font-weight: lighter;
+	
+}
+
+/*inscricao*/
+
+section.inscricao{
+	background: #52aaa7; 
+	padding: 20px 0;
+}
+
+.inscricao-texto{
+	font-weight: normal;
+	color: white;
+}
+
+
+.inscricao-form input[type=text]{
+	width: calc(100% - 125px);
+	height: 40px;
+	background: white;
+	border: 0.5px solid #ccc;
+	display: inline-block;
+
+
+
+}
+
+.inscricao-form input[type=submit]{
+	width: 120px;
+	height: 40px;
+	background: #1d6c64;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	color: white;
+	font-weight: normal;
+	font-size: 14px;
+
+
+}
+
+/*CARDS*/
+
+section.cards{
+	padding: 30px 0;
+
+
+}
+
+.card-single{
+	width: 33.3%;
+	float: left;
+	padding: 40px;
+	
+}
+
+.card-single img{
+	width: 50%;
+	border: 2px solid #ccc;
+	cursor: pointer;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.card-single h3{
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 19px;
+	text-align: center;
+}
+
+.card-single p{
+	margin: 10px 0;
+	font-weight: lighter;
+	font-size: 16px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid	#ccc;
+	text-align: center;
+}
+/* FOOTER*/
+
+footer.footer1{
+	background: #52aaa7;
+	padding: 20px 0;
+	color: white;
+}
+
+footer.footer1 h2{
+	font-weight: normal;
+	font-size: 23px;
+}
+
+footer.footer1 p{
+	margin-top: 8px;
+	font-weight: lighter;
+}
+
+footer.footer1 a{
+	display: block;
+	color: white;
+
+}
+
+div.group-icons a{
+	display: inline-block;
+	margin: 0px 10px;
+	margin-left: 0px;
+	font-size: 40px;
+}
+
+footer.footer2{
+	padding: 20px 0;
+	background: #237a70;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+}
+
+/* PAGINA SOBRE*/
+
+section.title-page{
+	padding: 20px;
+	width: 100%;
+	min-height: 150px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+
+}
+
+section.title-page h2{
+		text-align: left;
+		color: #52aaa7;
+		font-size: 40px;
+		font-weight: normal;
+}
+
+section.title-page p{
+	color: white;
+	font-size: 17px;
+	margin-top: 15px;
+	text-align: justify;
+}
+
+
+section.title-page > .container{
+	position: relative;
+	z-index: 2;
+}
+
+.overlay__title-page{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+/* sobre container noticias*/
+
+
+section.sobre__noticia{
+	padding: 30px 0;
+}
+
+
+.sobre__noticia__single img{
+	max-width: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+
+.sobre__noticia__single p{
+	float: left;
+	width: 60%;
+	padding: 5px 20px;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 25px;
+
+}
+
+.paragrafo__noticia__single{
+	margin-top: 10px;
+}
+
+
+.paragrafo__noticia__single p{
+	text-align: justify;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 10px; /*soma dos 2 padding de 5*/
+}
+
+
+/* sobre parallax s*/
+
+section.parallax{
+	padding: 30px 0; 
+	width: 100%;
+	min-height: 200px;
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+
+}
+
+section.parallax h2{
+	border: 1px solid #44d4c5;
+	color: #44d4c5;
+	padding: 5px 25px;
+	font-size: 20px;
+	display: inline-block;
+}
+
+section.parallax p{
+	margin-top: 10px;
+	color: white
+}
+
+/*sobre EQUIPE*/
+
+
+section.equipe{
+	padding: 30px 0;
+}
+
+
+.equipe-circles{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.equipe-circle-single{
+	text-align: center;
+	padding: 0 20px;
+	width: 33.3%;
+}
+
+.equipe-circle-single h3{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: normal;
+
+}
+
+.equipe-circle-single p{
+	margin-top: 10px;
+	font-weight: lighter;
+
+}
+
+.avatar-single{
+	position: relative;
+	width: 60%;
+	padding-top: 60%;
+	margin:0 auto;
+}
+
+.avatar-single-container{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #ccc;
+	background-size: 100% 100%;
+
+}
+
+/* SOBRE FINAL HISTÓRIA*/
+
+section.sobre__final{
+	background-color: rgb(225,225,225);
+	border-top: 2px solid	rgb(210,210,210);
+	padding: 30px 0;
+
+}
+
+.card-text{
+	margin-top: 10px;
+	width: 80%;
+	position: relative;
+	
+}
+
+.card-text img{
+	max-width: 100%;
+
+}
+
+.card-text h3{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+
+}
+
+
+section.sobre__final p{
+	text-align: justify;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-top: 10px;
+}
+
+/*CONTATO*/
+
+
+section.contato{
+	padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+	padding: 0 5px;
+}
+
+.formulario form {
+	margin-top: 15px;
+}
+
+.formulario h2{
+	background: #DDDDDD;
+	text-align: center;
+	color: #ACAC9D;
+	font-size: 18px;
+  font-weight: normal;
+	border-left: 5px solid #CCCCCC;
+	border-right: 5px solid #CCCCCC;
+	padding: 4px 0;
+
+}
+
+
+.formulario	input[type=text],
+.formulario input[type=email]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #CCC;
+	margin-bottom: 15px;
+	padding-left: 8px;
+
+}
+
+
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #CCC;
+	margin-bottom: 15px;
+	padding-left: 8px;
+	resize: vertical;
+
+}
+
+.tags-form{
+	padding-left: 50px;
+}
+
+
+.tags-form h2{
+	font-weight: normal;
+	font-size: 20px;
+
+}
+
+.tags-form p{
+	font-weight: lighter;
+
+}
+
+.tags-form p.tag-contato{
+	color: white;
+	background: #249b8f;
+	text-align: center;
+	margin-top: 6px;
+	padding: 8px 4px;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 768px){
+	.w50, .w33, .w60, .w40, .w100{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.box-icone-single{
+		width: 100%;
+	}
+
+	.equipe-container{
+	width: 100%;
+	}
+
+	.sobre-container{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.card-single{
+		width: 100%;
+		}
+
+	footer.footer1{
+		text-align: center;
+	}
+
+	/* sobre noticia*/
+	.sobre__noticia__single img{
+		width: 100%;
+
+	}
+
+
+	.sobre__noticia__single p{
+		margin-top: 10px;
+		width: 100%;
+		padding: 0;
+		
+
+	}
+
+	.paragrafo__noticia__single p{
+		margin-top: 10px;
+		width: 100%;
+		padding: 0;
+
+	}
+
+	.equipe-circle-single{
+		width: 100%;
+		padding: 0 8px;
+		margin-bottom: 20px;
+	}
+
+	.card-text{
+		width: 100%;
+	}
+
+	/* CONTATO */
+	.formulario	input[type=text],
+	.formulario input[type=email]{
+		margin-bottom: 0px;
+		
+	}
+
+	.formulario textarea{
+		margin-bottom: 0px;
+		
+	}
+
+	.tags-form{
+	padding-left: 0px;
+	}
+
+	.tags-form h2{
+	text-align: center;
+
+	}
+
+	
+
+}
+
+@media screen and (max-width: 500px){
+	
+	nav.menu-mobile{
+		display: block;
+	}
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	.card-single{
+		padding: 10px;
+		}
+
+	
+}
+
+
+
+
+
+
+
