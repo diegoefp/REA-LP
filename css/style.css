@@ -254,10 +254,11 @@ section.sobre-equipe > .container{
 }
 
 .sobre-container p{
-	color: black;
+	color: rgb(30,30,30);
 	font-size: 15px;
 	margin-top: 10px;
 	text-align: justify;
+	font-weight: lighter;
 }
 
 
@@ -265,19 +266,20 @@ section.sobre-equipe > .container{
 
 .avatar-box{
 	margin-top: 15px;
+	padding-right: 10px;
 }
 
 .img-avatar{
 	display: inline-block;
-	width: 70px;
-	height: 70px;
+	width: 140px;
+	height: 140px;
 	border-radius: 50%;
 	background-size: 100% 100%;
 }
 
 .descricao-avatar{
 	padding: 0 10px;
-	width: calc(100% - 70px);
+	width: calc(100% - 140px);
 	display: inline-block;
 }
 
@@ -285,12 +287,14 @@ section.sobre-equipe > .container{
 	color: rgb(30,30,30);
 	font-weight: normal;
 	font-style: italic;
+	margin-bottom: 5px;
 
 }
 
 .descricao-avatar p{
 	color: rgb(30,30,30);
 	font-weight: lighter;
+	text-align: justify;
 	
 }
 
@@ -393,7 +397,7 @@ footer.footer1 p{
 }
 
 footer.footer1 a{
-	display: block;
+	display: inline-block;
 	color: white;
 
 }
@@ -411,6 +415,13 @@ footer.footer2{
 	text-align: center;
 	color: white;
 	font-weight: normal;
+}
+
+footer.footer2 a{
+	display: block;
+	color: white;
+	text-decoration: none;
+
 }
 
 /* PAGINA SOBRE*/
@@ -708,6 +719,10 @@ section.contato .w100{
 	.sobre-container{
 		width: 100%;
 		margin-top: 30px;
+	}
+
+	.avatar-box{
+		padding-right: 0px;
 	}
 
 	.card-single{
