@@ -134,10 +134,10 @@ section.main-bg{
 	position: relative;
 	width: 100%;
 	padding: 100px 0;
-	background: url('../images/bg1.jpg');
+	background: url('../images/bg6.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 }
 
 section.main-bg > .container{
