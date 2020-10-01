@@ -43,8 +43,16 @@
 
 /* Classes do site*/
 
+/* HEADER*/
+
 header{
 	padding: 8px 0;
+	/* do bikcraft*/
+	position: fixed; /* Faz com que o topo sempre fique na tela no topo */
+	top: 0;
+	width: 100%;
+	background-color: white; 
+	z-index: 10;
 }
 
 
@@ -85,8 +93,9 @@ nav.menu-mobile ul {
 }
 
 nav.menu-mobile li{
-	padding: 8px 0;
-	border-bottom: 1px solid black;
+	padding: 12px 0;
+	border: 1px solid black;
+	margin-top: -1px;
 
 }
 
@@ -127,13 +136,15 @@ nav.menu-desktop a{
 
 nav.menu-desktop a:hover{text-decoration: underline;}
 
+/* fim HEADER*/
+
 
 /*Sessão MAIN*/
 
 section.main-bg{
 	position: relative;
 	width: 100%;
-	padding: 100px 0;
+	padding: 120px 0;
 	background: url('../images/bg6.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -172,6 +183,58 @@ section.main-bg p{
 	text-align: justify;
 
 }
+
+/*CARDS*/
+
+section.cards{
+	padding: 30px 0;
+}
+
+
+.titulo-cards h2{
+	text-align: center;
+	color: #52aaa7;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+
+.card-single{
+	width: 33.3%;
+	float: left;
+	padding: 40px;
+	
+}
+
+.card-single img{
+	width: 50%;
+	cursor: pointer;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+
+
+}
+
+.card-single h3{
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 19px;
+	text-align: center;
+}
+
+.card-single p{
+	margin: 10px 0;
+	font-weight: lighter;
+	font-size: 16px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid	#ccc;
+	text-align: center;
+}
+
+
+
 
 /* Diferenciais*/
 
@@ -337,47 +400,7 @@ section.inscricao{
 
 }
 
-/*CARDS*/
 
-section.cards{
-	padding: 30px 0;
-
-
-}
-
-.card-single{
-	width: 33.3%;
-	float: left;
-	padding: 40px;
-	
-}
-
-.card-single img{
-	width: 50%;
-	border: 2px solid #ccc;
-	cursor: pointer;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-
-}
-
-.card-single h3{
-	margin-top: 5px;
-	font-weight: normal;
-	font-size: 19px;
-	text-align: center;
-}
-
-.card-single p{
-	margin: 10px 0;
-	font-weight: lighter;
-	font-size: 16px;
-	padding-bottom: 20px;
-	border-bottom: 2px solid	#ccc;
-	text-align: center;
-}
 /* FOOTER*/
 
 footer.footer1{
@@ -427,9 +450,9 @@ footer.footer2 a{
 /* PAGINA SOBRE*/
 
 section.title-page{
-	padding: 20px;
+	padding: 60px;
 	width: 100%;
-	min-height: 150px;
+	min-height: 200px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -439,6 +462,7 @@ section.title-page{
 }
 
 section.title-page h2{
+		padding-top: 10px;
 		text-align: left;
 		color: #52aaa7;
 		font-size: 40px;
