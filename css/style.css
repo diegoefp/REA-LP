@@ -989,7 +989,15 @@ section.contato .w100{
 		float: center;
 	}
 
-	
+	.footer_share a{
+		float: center;
+	}
+
+	#my_centered_buttons { 
+		display: flex; 
+		justify-content: center;
+		margin-top: 10px; 
+	}
 
 	/* AULA TEXTO*/
 
