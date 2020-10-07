@@ -466,11 +466,13 @@ footer.footer1{
 footer.footer1 h2{
 	font-weight: normal;
 	font-size: 23px;
+	margin-bottom: 5px;
 }
 
 footer.footer1 p{
 	margin-top: 8px;
 	font-weight: lighter;
+
 }
 
 footer.footer1 a{
@@ -478,6 +480,20 @@ footer.footer1 a{
 	color: white;
 
 }
+
+.footer_share {
+	
+	float: right;
+	display: inline-block;
+	margin-top: 5px;
+
+}
+
+.footer_share a {
+		margin-right: 5px;
+			
+	}
+
 
 div.group-icons a{
 	display: inline-block;
@@ -628,6 +644,15 @@ section.aula__texto{
   	margin-top: 10px;
   	margin-bottom: 10px;
 	}
+
+
+.audio__aula__single h2{
+	padding-top: 10px;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	font-weight: lighter;
+}
 
 /*CARDS AULAS*/
 
@@ -959,6 +984,13 @@ section.contato .w100{
 	footer.footer1{
 		text-align: center;
 	}
+
+	.footer_share{
+		float: center;
+	}
+
+	
+
 	/* AULA TEXTO*/
 
 	.img__aula__single img{
