@@ -996,7 +996,7 @@ section.contato .w100{
 	#my_centered_buttons { 
 		display: flex; 
 		justify-content: center;
-		margin-top: 10px; 
+		margin-top: 10	px; 
 	}
 
 	/* AULA TEXTO*/
