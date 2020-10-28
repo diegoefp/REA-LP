@@ -193,12 +193,12 @@
 				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 					<p>Uma das formas de calcular a porcentagem de alguma coisa é utilizando a regra de três; na regra de três simples, é necessário que três valores sejam apresentados, para que assim, se descubra o quarto valor.</p>
 					<p>Pode ser representada pela seguinte formula:</p>
-					<p>Caso as grandezas sejam diretamente proporcionais (se aumentando uma a outra também aumenta) multiplicamos em Cruz ou X</p>
+					<p>Caso as grandezas sejam diretamente proporcionais (se aumentando uma a outra também aumenta) multiplicamos em Cruz ou X:</p>
 					<p style="text-align: center">A -> X <br>
 						B -> Y <br>
 						B*X = A*Y <br>
 					</p>
-					<p>Caso as grandezas sejam inversamente proporcionais (se aumentando uma a outra diminui) multiplicamos em linha</p>
+					<p>Caso as grandezas sejam inversamente proporcionais (se aumentando uma a outra diminui) multiplicamos em linha:</p>
 					<p style="text-align: center">A -> X <br>
 						B -> Y <br>
 						A*X = B*Y <br>
@@ -206,7 +206,7 @@
 					
 					
 					<p>Como por exemplo, calcular quanto tempo deve durar o resto da minha bateria de celular: <br>
-						Sabemos que 10% da bateria levou 1 hora para ser gasta, quanto tempo levará até que a bateria seja gasta completamente. (desconsiderando o desgaste da bateria). Então temos que: </p>
+						Sabemos que 10% da bateria levou 1 hora para ser gasta, quanto tempo levará até que a bateria seja gasta completamente. (desconsiderando o desgaste da bateria). Então temos que, multiplicar em cruz ou X: </p>
 						<p style="text-align: center">
 						10% -> 1hora <br>
 						100% -> X horas <br> <br>
@@ -234,7 +234,7 @@
 				</div><!-- FIM GIF CENTRALIZADO -->
 
 				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
-						<p> Outra forma de calcular valores de desconto é multiplicar o valor pela fração que você irá pagar após o desconto, no caso se você terá um desconto de 10% no valor do produto, então você estará pagando por 90% do produto, pois 100-10 = 90. Então podemos calcular o desconto da seguinte forma: </p>
+						<p> Outra forma de calcular porcentagens, como valores de desconto é multiplicar o valor pela fração que você irá pagar após o desconto, no caso se você terá um desconto de 10% no valor do produto, então você estará pagando por 90% do produto, pois 100-10 = 90. Então podemos calcular o desconto da seguinte forma: </p>
 						
 						<p>
 						<p style="text-align: center">
@@ -290,6 +290,149 @@
 
 	<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
 
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>3 - Funções: Absoluto, Truncar, MOD e Aleatório </h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+				<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+					<img src="images/01mat3.jpg"/>
+					<p>A definição de função vem da relação entre dois ou mais conjuntos, que é estabelecida através de uma lei de formação, a regra desta função ou fórmula. Os elementos de entrada se relacionam com os de saída através dessa regra de função. Como por exemplo a função y = 2x;</p>
+					<p>Para cada valor de X teremos um valor de Y resultante desta função f(x) = 2x;</p>
+					<p>Esta relação é uma função pois todos os elementos de X estão relacionados a pelo menos um elemento de Y, desta forma o <b>domínio</b> da função é dado pelos elementos do conjunto X, que na computação seriam as <b>entradas</b> de dados, e a <b>imagem</b> pelos elementos do conjunto Y, ou as <b>saídas</b> de dados.</p>
+					
+					
+					<div class="clear"></div>
+				</div><!-- FIM single aula texto -->
+
+				
+				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+					<p>As funções estão presentes em várias situações do cotidiano, e nas ciências como física, química, relacionando as grandezas explicando fenômenos através das regras de função e também na Ciência da computação para a resolução dos problemas computacionais e modularização de código.</p>
+					<p>Vamos agora apresentar algumas funções comumente usadas no desenvolvimento de algoritmos:</p>
+					<p><b>ABS:</b> ou absoluto: Retorna o valor absoluto do número, a sua distância até 0</p>
+					<p> Exemplos:  <br>
+						O valor absoluto de 5 é 5 <br>
+						O valor absoluto de -5 é 5 <br>
+						No visualg a função tem a seguinte sintaxe: ABS(numero) <br>
+					</p>
+				
+				</div><!-- FIM paragrafo de texto -->
+
+				<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+					<img src="images/01mat3.gif"/>
+				
+				</div><!-- FIM GIF CENTRALIZADO -->
+
+
+
+				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+					<p><b>Truncar:</b> Trunca (retira uma parte) o valor decimal, retornando um valor inteiro.</p>
+					<p>O truncamento é a limitação do número de dígitos à direita da vírgula decimal, remove tudo que está depois da virgula.</p>
+					<p> Exemplos:  <br>
+						Truncar 16,99 = 16 <br>
+						Truncar 20,50 =	20  <br>
+						No visualg a função tem a seguinte sintaxe: int(número). retornando a parte inteira de número. <br>
+					</p>
+				
+				</div><!-- FIM paragrafo de texto -->
+
+				<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+					<img src="images/01mat3_2.gif"/>
+				
+				</div><!-- FIM GIF CENTRALIZADO -->
+
+				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+					<p><b>MOD ou %:</b> retorna o resto da divisão de inteiros.</p>
+					<p> Exemplos:  <br>
+						8 mod 3 = 2; <br>
+						3 mod 4 = 3; <br>
+						4 mod 3 = 1; <br>
+						4 mod 2 = 0; <br>
+						No visualg a função tem a seguinte sintaxe: (x mod y) ou (x % y). retornando o resta da divisão de x por y. <br>
+					</p>
+					<p>A função mod é útil para saber se um numero é múltiplo de outro número, caso o resto da divisão do número pelo seu múltiplo for zero, então este número é múltiplo do número que você deseja saber. <br>
+						Exemplo: <br>
+						8 mod 2 = 0, portanto 8 é múltiplo de 2; <br> 
+						10 mod 3 = 1, portanto 10 não é multiplo de 3;<br><br>
+
+						É útil também para descobrir se um numero é par ou ímpar. <br>
+						Caso o resto da divisão do número por 2 seja zero o numero é par, caso não seja então ele é ímpar; <br>
+						10 mod 2 = 0 , 10 é par; <br>
+						11 mod 2 = 1. 11 é impar; <br>
+
+					</p>
+
+				</div><!-- FIM paragrafo de texto -->
+
+				<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+					<img src="images/01mat3_3.gif"/>
+				
+				</div><!-- FIM GIF CENTRALIZADO -->
+
+				<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+					<p><b>Randi:</b> retorna um número aleatório, ou seja, imprevisível. números randômicos são uteis em vários tipos de aplicações, como por exemplo aplicações de teste. </p>
+					<p>Vale notar que os números randômicos gerados por algoritmos são pseudoaleatórios, gerados por uma fórmula, não sendo verdadeiramente aleatórios, contudo, eles são o suficiente para a maioria dos casos de aplicação.</p>
+					<p>No visualg a função tem a seguintes sintaxes: <br>
+						Rand - Retorna um número real gerado aleatoriamente, maior ou igual a zero e menor que um. <br>
+						Randi(limite) - Retorna um número inteiro gerado aleatoriamente, maior ou igual a zero e menor que limite. <br>
+					</p>
+					<p>Exemplos:<br>
+						Randi(4) = pode retornar 0, 1, 2, ou 3; <br>
+						Randi(100) = retornará um randômico entre 0 e 99; 
+					</p>
+				</div><!-- FIM paragrafo de texto -->
+
+
+				<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+					<img style="max-height:450px; max-width: 300px " src="images/01mat3_4.gif"/>
+				
+				</div><!-- FIM GIF CENTRALIZADO -->
+
+				
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/01mat3.mp3" type="audio/mpeg">
+				  <source src="audios/horse.ogg" type="audio/ogg">
+					Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+
+			
+
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/aKaMQwvwnR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+
+
+
+
+
+
+
 
 
 
@@ -305,8 +448,9 @@
 					<h2>Links Uteis</h2>
 				</div>
 				
-				<p> Canal: <a href="https://www.youtube.com/channel/UCjIPRjJZtGhzWD2LrEKOHMA"> <i class="fa fa-youtube-play"></i> Matemática Rio com Prof. Rafael Procopio</a> </p>
-				<p> Canal: <a href="https://www.youtube.com/channel/UCLFNcRlcqnF0m16Ywj_favQ"><i class="fa fa-youtube-play"></i> labim </a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UCjIPRjJZtGhzWD2LrEKOHMA"><i style="color: red"class="fa fa-youtube-play"></i> Matemática Rio com Prof. Rafael Procopio</a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UCLFNcRlcqnF0m16Ywj_favQ"><i style="color: red" class="fa fa-youtube-play"></i> labim </a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UCqlUUryMxm0ysQV_TRzftUw"><i style="color: red" class="fa fa-youtube-play"></i> Assim é fácil matemática </a> </p>
 				<p> Site: <a href="https://brasilescola.uol.com.br/matematica"> Brasil Escola </a> </p>
 				
 				<p> Link4: <a href="https:\\www.google.com.br">google.com</a> </p>
