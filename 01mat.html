@@ -429,8 +429,203 @@
 
 <div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
 
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2> 4 - Analise Combinatória (Contagem, Permutação e Combinação)</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/01mat4.jpg"/>
+				<p>A análise combinatória é um campo da matemática que estuda as regras de contagem e conjuntos de possibilidades. Pode ser determinada como um conjunto de possibilidades constituído por elementos finitos, é utilizado na lógica matemática, para analisar possibilidades e combinações. </p>
+				<p>O <b>Princípio Fundamental da Contagem (PFC)</b>, o <b>fatorial</b> e os tipos de <b>agrupamento</b>, como a <b>combinação simples</b>, são exemplos de conceitos estudados na análise combinatória.
+				</p>
+				<p>Na ciência da computação, a analise combinatória é importante para calcular e gerenciar a quantidade finitas de recursos de computação que serão utilizados (como quantidade de memória e espaço) e podem resolver muitos problemas de contagem que ocorrem frequentemente.			</p>
+				
+				
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
 
 
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img style="max-height: 800px;" src="images/01mat5.png"/>
+				<p>A análise combinatória tem como função analisar e contar todas as combinações possíveis. Os agrupamentos estão constantemente presentes no nosso dia a dia e prever essas combinações é fundamental para a tomada de decisões.</p>
+				<p>Algumas aplicações práticas da analise combinatória no cotidiano são: quantos resultados são possíveis em um sorteio de loteria? Quantas combinações de CPF são possíveis? Quantas tentativas um hacker deve realizar para descobrir sua senha, ao tentar todas as combinações possíveis? Quantos endereços de IP (IPV4) são possíveis? Dentre várias outras situações que utilizam de combinações e contagens.</p>
+
+				<p>O <b>PFC</b> ou princípio fundamental da contagem é uma forma rápida de calcular a quantidade de combinações para um determinado problema, o número de possibilidades de um evento ocorrer é dado por:</p>
+				<p style="text-align: center">P1 * P2 * … * Pn</p>
+				<p>Sendo p1 a probabilidade do primeiro evento ocorrer, p2 a probabilidade do segundo evento ocorrer e assim por diante.</p>
+				<p>Por exemplo, imagine uma lanchonete que permita que o cliente monte seu lanche, as opções são, tipos de pão (normal ou integral), tipos de carne (bovina, suína, vegetariana) e complemento (cebola, bacon, salada); Quantos lanches diferentes são possíveis de serem montados com essas opções? </p>
+					<p>Seguindo o PFC teremos: <br>
+					Para a primeira opção: tipo de pão, temos duas opções: normal ou integral, portanto, -> P1=2; <br>
+					Para a segunda opção: tipo de carne, temos três opções: bovina, suína ou vegetariana, portanto -> P2 = 3; <br>
+					Para a terceira opção: Complementos, temos três opções: cebola, bacon ou salada, portanto -> P3 = 3; <br>
+					Calculando o PFC para o problema então temos que: </p>
+					<p style="text-align: center">P1 * P2 * P3 = 2*3*3 = 18 possibilidades.</p>
+					<p>Portanto existem 18 combinações diferentes de lanches possíveis com essas opções de montagem.</p>
+				
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p><b>Fatorial</b></p>
+				<p>O fatorial de um numero é a multiplicação deste por seus antecessores até o número 1, o fatorial é representado pelo símbolo de exclamação “!”, por exemplo o fatorial de 5 é representador por “5!”. <br>
+				O fatorial de n, é representado da seguinte forma: </p>
+				<p style="text-align: center">n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1!</p>
+				<p>Exemplos: <br>
+				5! = 5*4*3*2*1 = 120; <br>
+				3! = 3*2*1 = 6; <br>
+				1! = 1; <br>
+				Observação: 0! = 1; </p>
+				<p></p>No Visualg, não existe uma função para calcular o fatorial de um numero de forma mais rápida e simples. É necessário criar uma rotina de repetição para que o número seja multiplicado pelo antecessor até que este seja multiplicado pelo número 1.
+				</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img src="images/01mat4_1.gif"/>
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p><b>Permutação Simples</b></p>
+				<p>Na permutação os elementos que compõem o agrupamento mudam de ordem, ou seja, de posição. Permutar é trocar de posição, formando uma nova ordem. Determinamos a quantidade possível de permutação dos elementos de um conjunto, através do fatorial: </p>
+				<p style="text-align: center">Pn = n! </p>
+				<p>A permutação é utilizada em vários problemas que exigem trocas de posições e cálculos de possibilidades como filas, anagramas, posições. <br> 
+				Por exemplo: quantos anagramas (combinações diferentes, com as mesmas letras) a palavra AULA pode ter? <br>
+				Pelo PFC: <br>
+				Para a primeira posição, tempo 4 letras, para a segunda 3 letras, para a terceira posição 2 letras, para a quarta posição temos 1 letra restante. <br>Portanto: <br>
+				4*3*2*1 = 24; <br>
+				A palavra AULA possui 24 anagramas; <br>
+				Ao utilizarmos a fórmula da permutação simples, como aula possui 4 letras, temos:</p>
+				<p style="text-align: center">P4= 4! = 24;</p>
+					<p>Outro exemplo: em uma eleição com 3 candidatos, Marcos, José e Ana, quais os possíveis resultados dessa eleição; <br>
+					Usando o PFC: <br>
+					Para a primeira posição temos 3 opções, para a segunda posição temos 2 opções, para a terceira posição temos 1 opção; portanto: 3*2*1 = 6 resultados diferentes. <br>
+					<p style="text-align: center">P3 = 3! = 6;	</p>
+
+													
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p><b>Arranjo</b></p>
+				<p> No arranjo o numero de posições não é igual ao numero de objetos, mas a ordem em que os objetos podem ser posicionados importa. <br>
+				Para calcular o arranjo, utilizamos a formula: 
+				</p>
+													
+			</div><!-- FIM paragrafo de texto -->
+
+			<div style="max-width:300px; max-height:250px;width: auto; height: auto; text-align: center; display: block; margin-left: auto; margin-right: auto;" class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/01mat7.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Por exemplo: ao selecionar dois alunos de uma turma para serem orador e paraninfo de sua formatura, a ordem dos alunos importa. João paraninfo e Ana oradora, é diferente de Ana paraninfa e João Orador. Neste exemplo ao escolher em uma turma de 10 alunos, teremos: <br> <br>
+					A10,2 = 10!/ (10-2)! <br>
+					10!/ 8! <br>
+					10*9*8!/8! <br>
+					10*9 = 90 possibilidades;	<br>
+					Os alunos podem ser escolhidos para as posições de 90 formas diferentes; </p>
+					<p>O mesmo exercício poderia ter sido realizado utilizando o PFC, pois para a primeira posição teríamos 10 alunos, já para a segunda posição restariam 9 alunos portanto: <br>
+					P1*P2 = 10*9 = 90 possibilidades;	</p>
+													
+			</div><!-- FIM paragrafo de texto -->
+
+
+
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p><b>Combinação</b></p>
+				<p> Na combinação simples, a ordem dos elementos no agrupamento não interfere. São arranjos que se diferenciam somente pela natureza de seus elementos. São conjuntos de N elementos tomados em uma quantidade P. <br>
+				Para calcular a combinação, utilizamos a fórmula:
+				</p>
+													
+			</div><!-- FIM paragrafo de texto -->
+
+			<div style="max-width:300px; max-height:250px;width: auto; height: auto; text-align: center; display: block; margin-left: auto; margin-right: auto;" class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/01mat6.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Por exemplo: quantas combinações são possíveis ao escolher dois alunos em uma turma que possui 10 alunos? <br>
+					C10,2 = 10! / 2!(10-2)! <br>
+					10! / 2! *8! <br>
+					10 *9 * 8! / 2!*8! <br>
+					10*9/2! <br>
+					90/2 = 45 <br>
+					Os alunos podem ser escolhidos em duplas de 45 formas diferentes; </p>
+													
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p><b>Contagem – Contador</b></p>
+				<p> A contagem ou contador é determinar o total de números ou sua quantidade; <br>
+						Contadores podem ser incrementados (somar/aumentar) ou decrementados (diminuir/subtrair); <br>
+						Incremento: Contador = Contador +1; <br>
+						Decremento: Contador = Contador -1; <br>
+						Contadores são utilizados nas estruturas de controle e de repetição, para a contagem de repetições e para limitar o seu número (condição de parada); </p>
+						<p>Exemplo se queremos contar até 5 ou que uma função ou parte do nosso código seja realizada até 5, faremos o incremento do contador até 5; partindo que o contador começa do zero temos: <br>
+						Contador = Contador +1;  <br>
+						Contador = 0+1= 1; <br>
+						Contador = 1+1 = 2; <br>
+						Contador = 2+1 = 3; <br>
+						Contador = 3+1 = 4; <br>
+						Contador = 4+1 = 5;</p>
+						<p>O decremento funciona da mesma maneira, porém subtraindo -1 do contador que deve começar de um valor maior do que zero; para calcular do 5 até zero usamos um decremento; <br>
+						Contador = Contador -1; <br>
+						Contador = 5-1= 4; <br>
+						Contador = 4-1 = 3; <br>
+						Contador = 3-1 = 2; <br>
+						Contador = 2-1 = 1; <br>
+						Contador = 1-1 = 0;</p>
+													
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<div id="ladoalado">
+				<img style="max-width:600px; max-height:600px;width: auto; height: auto; display: inline-flex; justify-content: center; " src="images/01mat4_2.gif"/>
+				</div>
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source  src="audios/01mat.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+
+			
+
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/3RaTJOZL6MA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
 
 
 
@@ -451,8 +646,9 @@
 				<p> Canal: <a href="https://www.youtube.com/channel/UCjIPRjJZtGhzWD2LrEKOHMA"><i style="color: red"class="fa fa-youtube-play"></i> Matemática Rio com Prof. Rafael Procopio</a> </p>
 				<p> Canal: <a href="https://www.youtube.com/channel/UCLFNcRlcqnF0m16Ywj_favQ"><i style="color: red" class="fa fa-youtube-play"></i> labim </a> </p>
 				<p> Canal: <a href="https://www.youtube.com/channel/UCqlUUryMxm0ysQV_TRzftUw"><i style="color: red" class="fa fa-youtube-play"></i> Assim é fácil matemática </a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UC_2Pl-hyJkGrLz9NCAq2Knw"><i style="color: red" class="fa fa-youtube-play"></i> Matemática Genial </a> </p>
 				<p> Site: <a href="https://brasilescola.uol.com.br/matematica"> Brasil Escola </a> </p>
-				<p> Site: <a href="https://www.todamateria.com.br/"> Toda Matéria </a> </p>
+				<p> Site: <a href="https://www.todamateria.com.br/matematica/"> Toda Matéria </a> </p>
 				
 				<p> Link4: <a href="https:\\www.google.com.br">google.com</a> </p>
 

@@ -982,6 +982,13 @@ section.contato .w100{
 	padding: 8px 4px;
 }
 
+#ladoalado{
+	display:flex;
+  justify-content: center;
+  padding: -20px;
+}
+
+
 /*Responsividade*/
 
 @media screen and (max-width: 768px){
