@@ -155,9 +155,21 @@ nav.menu-mobile li.selected{
 	background: rgb(225,225,225);
 }
 
+nav.menu-mobile a.selected{
+	font-weight: bold;
+	background: rgb(225,225,225);
+}
+
+#selected{
+	font-weight: bold;
+	background: rgb(225,225,225);
+}
+
 
 
 nav.menu-desktop li.selected{font-weight: bold; }
+
+nav.menu-desktop a.selected{font-weight: bold; }
 
 nav.menu-desktop{
 	float: right;
