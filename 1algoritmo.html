@@ -532,22 +532,162 @@
 			</div> <!-- FIM TITULO INTERNO  -->
 
 			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
-				<img src="images/1log.jpg"/>
-				<p></p>
-				
+				<img src="images/1alg8.jpg"/>
+				<p><b>Operadores</b> são elementos fundamentais que atuam sobre operandos e produzem um determinado resultado. Por exemplo, a expressão 3 + 2 relaciona dois operandos (os números 3 e 2, por meio do operador (+) que representa a operação de adição.</p>
+				<p>Os operadores podem ser classificados em: </p>
+					<p><b>Binários:</b> quando atuam sobre dois operandos, como os operadores das operações aritméticas básicas (soma. Subtração, multiplicação e divisão).</p>
+					<p>Ex: 3+2;</p>	
+					<p><b>Unários:</b> quando atual sobre um único operando, por exemplo ao inverter o sinal de um numero .</p>
+					<p>Ex: -1;</p>
+
 				<div class="clear"></div>
 			</div><!-- FIM single aula texto -->
 
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
-				<p></p>
+				<p>Outra classificação dos operadores é feita considerando-se o tipo de dado de seus operandos e do valor resultante de sua avaliação. Segundo esta classificação, os operandos dividem-se em <b>aritméticos, lógicos e literais.</b> </p>
+				<p>Esta divisão está diretamente relacionada com o tipo de expressão onde aparecem os operadores. Um caso especial é o dos operadores <b>relacionais</b>, que permitem comparar pares de operandos de tipos de dados iguais, resultando sempre num valor lógico. </p>
+				<p><b>Operadores de Atribuição</b></p>
+				<p>Um operador de atribuição serve para atribuir um valor a uma variável. Em Algoritmo e no VisuAlg usamos o operador de atribuição: <b>: =</b>
+				</p>
+				<p>A sintaxe de um comando de atribuição é: </p>
+					<p>NomedaVariável := expressão </p>
+					<p>Exemplo: Nota1:=10 </p>
+					<p>A expressão localizada no lado direito do sinal de igual é avaliada e armazenado o valor resultante na variável à esquerda. O nome da variável aparece sempre sozinho, no lado esquerdo do sinal de igual deste comando. </p>
+					<p>Para o exemplo a variável de nome “Nota1” recebe e armazena o valor inteiro de 10.
+					</p>
+					<p><b>Operadores Aritméticos</b> </p>
+					<p>Os operadores aritméticos se relacionam às operações aritméticas básicas, conforme a tabela abaixo: </p>
 									
 			</div><!-- FIM paragrafo de texto -->
 
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img style="width: auto; height: auto;" src="images/1alg9.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>A prioridade entre operadores define a ordem em que os mesmos devem ser avaliados dentro de uma mesma expressão, como visto no modulo 01 Ordem das operações aritméticas , as operações com prioridade 1 são executadas antes das de prioridade 2 e assim por diante. </p>
+														
+			</div><!-- FIM paragrafo de texto -->
+
 			<div class="audio__aula__single"><!-- AUDIO -->
-				<h2> <i class="fa fa-headphones"></i> Escute essa aula</h2><!-- TITULO DO AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores de Atribuição e Aritméticos</h2><!-- TITULO DO AUDIO -->
 				<audio controls> 
-				  <source src="audios/1log.mp3" type="audio/mpeg">
+				  <source src="audios/1alg.mp3" type="audio/mpeg">
+				  
+					Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+					<p><b>Operadores Relacionais:</b></p>
+
+					<p>Os operadores relacionais são operadores binários que devolvem os valores lógicos verdadeiro e falso.  </p>
+									
+			</div><!-- FIM paragrafo de texto -->
+
+			
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img style="width: auto; height: auto;" src="images/1alg10.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Estes operadores são somente usados quando se deseja efetuar comparações. Comparações só podem ser feitas entre objetos de mesma natureza, isto é, variáveis do mesmo tipo de dado. O resultado de uma comparação é sempre um valor lógico. </p>
+				<p>Por exemplo, só podem ser compradas variáveis inteiras entre si:</p>
+				<p>5 > 7 ?</p>
+				<p>Cinco é maior que sete? Não, o resultado dessa operação é o valor lógico Falso. </p>
+				<p>	Considere o seguinte algoritmo: </p>
+				<p>Escolha := 7 <br>
+					Escolha <= 5 <br>
+					Escolha > 5 </p>
+					<p>Na primeira linha a variável escolha recebe e armazena o valor de 7.</p>
+					<p>Na segunda linha a variável escolha (que tem o valor de 7) é menor que 7? Não, portanto falso. </p>
+					<p>Na terceira linha a variável escolha (que tem o valor de 7) é maior que 5? Sim, portanto verdadeiro.
+					</p>
+					<p>Com valores string, os operadores relacionais comparam os valores ASCII dos caracteres correspondentes em cada string. Uma string é dita "menor que" outra se os caracteres correspondentes tiverem os números de códigos ASCII menores.</p>
+					<p>Por exemplo ao comparar:</p>
+					<p>a < b</p>
+					<p>“a é menor do que b?” o valor é verdadeiro poia a possui um valor menor do que b.</p>
+					<p>Observe que as letras minúsculas têm códigos ASCII maiores do que os das letras maiúsculas, Portanto:</p>
+					<p>“algoritmo” > “ALGORITMO”</p>
+					<p>Observe também que o comprimento da string se torna o fator determinante na comparação de duas strings, quando os caracteres existentes na string menor são os mesmos que os caracteres correspondentes na string maior. Neste caso, a string maior é dita “maior que” a menor.</p>
+					<p>“Algoritmo do dia” > “Algoritmo” </p>
+					<p>Pois “Algoritmo do dia” é uma string maior que “Algoritmo”.		</p>	
+					<p><b>Operadores Lógicos:</b></p>	
+					<p>Os operadores lógicos ou booleanos são usados para combinar expressões relacionais. Também devolvem como resultado valores lógicos verdadeiro ou falso.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img style="width: auto; height: auto;" src="images/1alg11.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Como visto no módulo 02 Introdução a lógica.</p>
+				<p>Fornecendo dois valores ou expressões lógicas, representadas por expressão1 e expressão2, podemos descrever as quatro operações lógicas a seguir:</p>
+				<p>expressão1 <b>E</b> expressão2 é verdadeiro somente se ambas, expressão1 e expressão2, forem verdadeiras. Se uma for falsa, ou se ambas forem falsas, a operação e também será falsa.</p>
+				<p>expressão1 <b>OU</b> expressão2 é verdadeiro se tanto a expressão1 como a expressão2 forem verdadeiras. As operações OU só resultam em valores falsos se ambas, expressão1 e expressão2, forem falsas.</p>
+				<p><b>NÃO</b> expressão1 avalia verdadeiro se expressão1 for falsa; de modo contrário, a expressão NÃO resultará em falso, se expressão1 for verdadeira.</p>
+				
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Relacionais e Lógicos</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/1alg.mp3" type="audio/mpeg">
+				  
+					Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Operadores Literais:</b></p>
+				<p>Os operadores que atuam sobre caracteres variam muito de uma linguagem para outra. O operador mais comum e mais usado é o operador que faz a concatenação de strings: toma-se duas strings e acrescenta-se (concatena-se) a segunda ao final da primeira.</p>
+				<p>O operador que faz esta operação é: <b>+</b></p>
+				<p>Por exemplo, a concatenação das strings “ALGO” e “RITMO” é representada por: “ALGO” + “RITMO” e o resultado de sua avaliação é: “ALGORITMO”.</p>
+				<p><b>Expressões</b></p>
+				<p>O conceito de expressão em termos computacionais está intimamente ligado ao conceito de expressão ou fórmula matemática, onde um conjunto de variáveis e constantes numéricas relacionam-se por meio de operadores aritméticos compondo uma fórmula que, uma vez avaliada, resulta num valor.</p>
+				<p><b>Expressões Aritméticas:</b></p>
+				<p>Expressões aritméticas são aquelas cujo resultado da avaliação é do tipo numérico, seja ele inteiro ou real. Somente o uso de operadores aritméticos, variáveis numéricas e parênteses é permitido em expressões deste tipo.</p>
+				<p>Exemplo: 2*3 =6</p>
+				<p><b>Expressões Lógicas:</b></p>
+				<p>Expressões lógicas são aquelas cujo resultado da avaliação é um valor lógico verdadeiro ou falso. Nestas expressões são usados os operadores relacionais e os operadores lógicos, podendo ainda serem combinados com expressões aritméticas. Quando forem combinadas duas ou mais expressões que utilizem operadores relacionais e lógicos, os mesmos devem utilizar os parênteses para indicar a ordem de precedência.</p>
+				<p>Exemplo: V ou F = V</p>
+				<p><b>Expressões Literais:</b></p>
+				<p>Expressões literais são aquelas cujo resultado da avaliação é um valor literal (caractere). Neste tipo de expressões só é usado o operador de literais (+). </p>
+				<p>Exemplo: “Aula” + “de” + “algoritmos” = “Aula de algoritmos”</p>
+				<p><b>Avaliação de Expressões</b></p>
+				<p>Não podemos esquecer que existe uma ordem de avaliação de operadores como visto no modulo 01.</p>
+				<p>As seguintes regras são essenciais para a correta avaliação de expressões:</p>
+				<p>Deve-se observar a prioridade dos operadores, conforme mostrado nas tabelas de operadores: operadores de maior prioridade devem ser avaliados primeiro. </p>
+				<p>Se houver empate com relação à precedência, então a avaliação se faz da esquerda para a direita.</p>
+				<p>Os parênteses usados em expressões têm o poder de “roubar” prioridade dos demais operadores, forçando a avaliação da sua expressão em seu interior.</p>
+				<p>Ordem das operações: <br>
+					<b>1º</b> Parêntesis (Dentro dos parênteses, você deve seguir a ordem das operações como faria em uma expressão sem eles.);<br>
+					<b>2º</b> Expoentes (Potenciação) ou Raízes (Radiciação) - (da esquerda para a direita); <br>
+					<b>3º</b> Multiplicações e Divisões (da esquerda para a direita); <br>
+					<b>4º</b> Somas e Subtrações (da esquerda para a direita); <br>
+					</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Literais e avaliação de operações</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/1alg.mp3" type="audio/mpeg">
 				  
 					Your browser does not support the audio element.
 				</audio> 
