@@ -457,14 +457,14 @@
 					<p>✔ Variáveis de tipos diferentes devem ser declaradas em linhas diferentes. </p>
 					<p>Exemplos de definição de variáveis:</p>	
 					<p><b>VAR</b> </p>
-					<p style="padding-left:3em">nome: caractere <br>
+					<p style="padding-left:3em">nome: caractere[20] <br>
 						idade: inteiro <br>
 						salário: real <br>
 						tem_filhos: logico <br>
 						nota1, nota2: inteiro</p>
 
 					<p>Observe que no exemplo acima foram declaradas 6(seis) variáveis: </p>
-					<p>	A variável nome, é capaz de armazenar dados caractere; <br>
+					<p>	A variável nome, é capaz de armazenar dados caractere até 20 caracteres; <br>
 						a variável idade, capaz de armazenar um número inteiro; <br>
 						a variável salário, capaz de armazenar um número real; <br>
 						a variável tem_filhos, capaz de armazenar uma informação lógica (verdadeiro ou falso). <br>
@@ -557,7 +557,7 @@
 				<img src="images/1alg8.jpg"/>
 				<p><b>Operadores</b> são elementos fundamentais que atuam sobre operandos e produzem um determinado resultado. Por exemplo, a expressão 3 + 2 relaciona dois operandos (os números 3 e 2, por meio do operador (+) que representa a operação de adição.</p>
 				<p>Os operadores podem ser classificados em: </p>
-					<p><b>Binários:</b> quando atuam sobre dois operandos, como os operadores das operações aritméticas básicas (soma. Subtração, multiplicação e divisão).</p>
+					<p><b>Binários:</b> quando atuam sobre dois operandos, como os operadores das operações aritméticas básicas (Soma, Subtração, multiplicação e divisão).</p>
 					<p>Ex: 3+2;</p>	
 					<p><b>Unários:</b> quando atual sobre um único operando, por exemplo ao inverter o sinal de um numero .</p>
 					<p>Ex: -1;</p>
@@ -596,7 +596,7 @@
 			<div class="audio__aula__single"><!-- AUDIO -->
 				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores de Atribuição e Aritméticos</h2><!-- TITULO DO AUDIO -->
 				<audio controls> 
-				  <source src="audios/1alg.mp3" type="audio/mpeg">
+				  <source src="audios/1alg3-1.mp3" type="audio/mpeg">
 				  
 					Your browser does not support the audio element.
 				</audio> 
@@ -629,7 +629,7 @@
 					Escolha <= 5 <br>
 					Escolha > 5 </p>
 					<p>Na primeira linha a variável escolha recebe e armazena o valor de 7.</p>
-					<p>Na segunda linha a variável escolha (que tem o valor de 7) é menor que 7? Não, portanto falso. </p>
+					<p>Na segunda linha a variável escolha (que tem o valor de 7) é menor ou igual a 5? Não, portanto falso. </p>
 					<p>Na terceira linha a variável escolha (que tem o valor de 7) é maior que 5? Sim, portanto verdadeiro.
 					</p>
 					<p>Com valores string, os operadores relacionais comparam os valores ASCII dos caracteres correspondentes em cada string. Uma string é dita "menor que" outra se os caracteres correspondentes tiverem os números de códigos ASCII menores.</p>
@@ -649,6 +649,16 @@
 				
 			</div><!-- FIM GIF CENTRALIZADO -->
 
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Relacionais </h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/1alg3-2.mp3" type="audio/mpeg">
+				  
+					Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 					<p><b>Operadores Lógicos:</b></p>	
 					<p>Os operadores lógicos ou booleanos são usados para combinar expressões relacionais. Também devolvem como resultado valores lógicos verdadeiro ou falso.</p>
@@ -663,7 +673,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				<p>Como visto no módulo 02 Introdução a lógica.</p>
-				<p>Fornecendo dois valores ou expressões lógicas, representadas por expressão1 e expressão2, podemos descrever as quatro operações lógicas a seguir:</p>
+				<p>Fornecendo dois valores ou expressões lógicas, representadas por expressão1 e expressão2, podemos descrever as três operações lógicas a seguir:</p>
 				<p>expressão1 <b>E</b> expressão2 é verdadeiro somente se ambas, expressão1 e expressão2, forem verdadeiras. Se uma for falsa, ou se ambas forem falsas, a operação e também será falsa.</p>
 				<p>expressão1 <b>OU</b> expressão2 é verdadeiro se tanto a expressão1 como a expressão2 forem verdadeiras. As operações OU só resultam em valores falsos se ambas, expressão1 e expressão2, forem falsas.</p>
 				<p><b>NÃO</b> expressão1 avalia verdadeiro se expressão1 for falsa; de modo contrário, a expressão NÃO resultará em falso, se expressão1 for verdadeira.</p>
@@ -672,9 +682,9 @@
 			</div><!-- FIM paragrafo de texto -->
 
 			<div class="audio__aula__single"><!-- AUDIO -->
-				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Relacionais e Lógicos</h2><!-- TITULO DO AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Lógicos</h2><!-- TITULO DO AUDIO -->
 				<audio controls> 
-				  <source src="audios/1alg.mp3" type="audio/mpeg">
+				  <source src="audios/1alg3-3.mp3" type="audio/mpeg">
 				  
 					Your browser does not support the audio element.
 				</audio> 
@@ -718,7 +728,7 @@
 			<div class="audio__aula__single"><!-- AUDIO -->
 				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Operadores Literais e avaliação de operações</h2><!-- TITULO DO AUDIO -->
 				<audio controls> 
-				  <source src="audios/1alg.mp3" type="audio/mpeg">
+				  <source src="audios/1alg3-4.mp3" type="audio/mpeg">
 				  
 					Your browser does not support the audio element.
 				</audio> 
