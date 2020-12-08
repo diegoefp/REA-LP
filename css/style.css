@@ -617,7 +617,9 @@ section.aula__texto{
 .img__aula__single img{
 	max-width: 100%;
 	float: center;
-	width: 50%;
+	/*width: 50%;*/
+	width: auto;
+	height: auto;
 	display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1069,6 +1071,7 @@ P.blocktext { /*texto centralizado*/
 
 	.img__aula__single img{
 		width: 100%;
+		max-width: 100%;
 		
 	}
 
@@ -1187,6 +1190,8 @@ P.blocktext { /*texto centralizado*/
 	.card-single-aulas{
 		padding: 10px;
 	}
+
+
 
 	
 }
