@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REA-LP</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Diego Eugenio Fernandes Pereira">
+	<meta name="description" content="Recurso Educacional Aberto para o ensino de Algoritmos e lógica de programação">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="keywords" content="palavras-chave, lorem, ipsum">
+	<!--Colocar aqui meta tags SEO -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="icons/faviconlp.ico">
+
+</head>
+<body>
+<!-- Header -->
+		<header>
+			<div class="container">
+			<div class="logo"><a href="index.html"> <h2>REA-LP</h2></a></div>
+
+				<nav class="menu-desktop">
+					<ul>
+						<li >
+							<a href="index.html">Home</a>
+						</li>
+						<li >
+							<div class="dropdown">
+							  <a class="selected" ><button class="dropbtn" onclick="myFunction()">Aulas
+							    <i class="fa fa-caret-down"></i>
+							  </button></a>
+							  <div class="dropdown-content" id="myDropdown">
+							    <a href="01mat.html">01 - Matematica Fundamental</a>
+							    <a href="02logica.html">02 - Introdução a lógica</a>
+							    <a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+							    <a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+							    <a class="selected" href="3se.html">3 - Controle de fluxo: Se</a>
+							    <a href="4caso.html">4 - Controle de fluxo: Caso</a>
+							    <a href="5enquanto.html">5 - Controle de fluxo: Enquanto</a>
+							    <a href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+							    <a href="7matrizes.html">7 - Matrizes</a>
+							    <a href="8funcoes.html">8 - Modularização e funções</a>
+							    <a href="9registros.html">9 - Registros (Struct)</a>
+							  </div>
+							 </div> 
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						
+					</ul>
+				</nav> <!-- fecha menu desktop -->
+
+				<nav class="menu-mobile">
+					<h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
+					<ul>
+						<li >
+							<a  href="index.html">Home</a>
+						</li>
+						<li>
+							    <a  href="01mat.html">01 - Matematica Fundamental</a>
+						</li>
+						<li>
+									<a href="02logica.html">02 - Introdução a lógica</a>
+						</li>
+						<li>
+									<a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+						</li>
+						<li>
+									<a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+						</li>
+						<li class="selected">
+									<a href="3se.html">3 - Controle de fluxo: Se</a>
+						</li>
+						<li>
+									<a href="4caso.html">4 - Controle de fluxo: Caso</a>
+						</li>
+						<li>
+									<a href="5enquanto.html">5 - Controle de fluxo: Enquanto</a>
+						</li>
+						<li>
+									<a href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+						</li>
+						<li>
+									<a href="7matrizes.html">7 - Matrizes</a>
+						</li>
+						<li>
+									<a href="8funcoes.html">8 - Modularização e funções</a>
+						</li>
+						<li>
+									<a href="9registros.html">9 - Registros (Struct)</a>
+						</li>
+					</ul>
+				</nav><!-- fecha menu mobile -->
+
+				<div class="clear"></div>
+			</div>
+		</header>
+<!-- FIM Header -->
+
+
+<!-- Banner interno -->
+
+<section style="background-image: url('images/3sebg.jpg');"  class="title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Aula 3 - Controle de Fluxo: SE</h2>
+			<p>Estrutura de controle de fluxo de execução condicional SE ... Senão, estrutura de decisão utilizada para alterar o fluxo/resultado de um algoritmo.  </p>
+		</div><!-- FIM container -->
+	</section> <!-- FIM title page -->
+
+<!-- FIM banner -INSIDE -->
+
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>1 - Estruturas De Controle Do Fluxo De Execução</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/3se1-1.jpeg"/>
+				<p>Até o momento os algoritmos estudados utilizam apenas instruções primitivas de atribuição, e de entrada e saída de dados. Qualquer conjunto de dados fornecido a um algoritmo destes será submetido ao mesmo conjunto de instruções, executadas sempre na mesma sequência.</p>
+				<p>No entanto, na prática muitas vezes é necessário executar ações diversas em função dos dados fornecidos ao algoritmo. Em outras palavras, dependendo do conjunto de dados de entrada do algoritmo, deve-se executar um conjunto diferente de instruções.</p>
+				<p>Além disso, pode ser necessário executar um mesmo conjunto de instruções um número repetido de vezes. Em resumo é necessário <b>controlar o fluxo de execução das instruções</b>  (a sequência em que as instruções são executadas num algoritmo) em função dos dados fornecidos como entrada do mesmo.</p>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>De acordo com o modo como o controle do fluxo de instruções de um algoritmo é feito, as estruturas básicas de controle são classificadas em:</p>
+				<p style="padding-left:3em">	•	Estruturas sequenciais <br>
+						•	Estruturas de decisão <br>
+						•	Estruturas de repetição
+							</p>
+				<p><b>Comandos Compostos:</b></p>
+				<p>Um comando composto é um conjunto de zero ou mais comandos (ou instruções) simples, como atribuições e instruções primitivas de entrada ou saída de dados, ou alguma das construções apresentadas neste capítulo. </p>
+				<p>Este conceito é bastante simples e será útil e conveniente nos itens seguintes, na definição das estruturas básicas de controle de execução.	</p>
+				<p><b>Estrutura Sequencial:</b></p>
+				<p>Na estrutura sequencial os comandos de um algoritmo são executados numa sequência pré-estabelecida. Cada comando é executado somente após o término </p>
+				<p>Uma estrutura sequencial é delimitada pelas palavras-reservadas Início e Fim e contém basicamente comandos de atribuição, comandos de entrada e comandos de saída. Os algoritmos do capítulo anterior são algoritmos que utilizam uma única estrutura sequencial.</p>
+				<p>Um algoritmo puramente sequencial é aquele cuja execução é efetuada em ordem ascendente dos números que identificam cada passo. A passagem de um passo ao seguinte é natural e automática, e cada passo é executado uma única vez.</p>
+				<p>É o que vínhamos fazendo até este momento, observe a sequencia de execução de um algoritmo sequencial:</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/3se1.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>A execução do código ocorre de cima para baixo sem interrupções e repetições.</p>
+				<p><b>Estruturas de Decisão</b></p>
+				<p>Neste tipo de estrutura o fluxo de instruções a ser seguido é escolhido em função do resultado da avaliação de uma ou mais condições. Uma condição é uma expressão lógica.</p>
+				<p>A classificação das estruturas de decisão é feita de acordo com o número de condições que devem ser testadas para que se decida qual o caminho a ser seguido. Segundo esta classificação, têm-se 3 tipos de estruturas de decisão:</p>
+				<p style="padding-left:3em">•	Estrutura de Decisão Simples (Se ... então) <br>
+					•	Estrutura de Decisão Composta (Se ... então ... senão) <br>
+					•	Estrutura de Decisão Múltipla do Tipo Escolha (Escolha ... Caso ... Senão)
+					</p>
+				<p>Nestes algoritmos, as situações são resolvidas através de passos cuja execução é subordinada a uma condição. Assim, o algoritmo conterá passos que são executados somente se determinadas condições forem observadas.</p>
+
+															
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de controle de fluxo de Execução</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+		
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Não se preocupe com os código apresentados no seguite vídeo, as estruturas SE... Então ... Senão serão abordadas nas aulas seguintes, atente-se as conceitos.</p>
+												
+			</div><!-- FIM paragrafo de texto -->					
+			
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/qefW7q1CbUo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+
+<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>2 - Estruturas de Decisão Simples ( Se ... então ) </h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/3se2-1.png"/>
+				<p>Nesta estrutura uma única condição (expressão lógica) é avaliada. Dependendo do resultado desta avaliação, um comando ou conjunto de comandos serão executados (se a avaliação for verdadeira) ou não serão executados (se a avaliação for falsa). Observe no diagrama de blocos na figura, a estrutura para instrução se...então . </p>
+				<p>Há duas sintaxes possíveis para a estrutura de decisão simples:</p>
+				<p>SE condição ENTÃO</p>
+				<p style="padding-left:3em">comando_único</p>
+				<p>Fimse</p>
+				<p><b>Exemplo:</b></p>
+				<p>Se X>10 entao</p>
+				<p style="padding-left:3em">Escreval (x, " é maior que 10")</p>
+				<p>Fimse</p>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p> SE condição ENTÃO </p>
+				<p style="padding-left:3em">	comando_composto </p> 
+				<p>	FIMSE	</p>
+				<p><b>Exemplo:</b></p>
+				<p>Se X>10 entao</p>
+				<p style="padding-left:3em">cont:= cont+1 <br>
+        soma := cont+ x <br>
+        Escreva (x, " é maior que 10")</p>
+				<p>Fimse</p>
+				<p>A <b>semântica</b> desta construção é a seguinte: a condição é avaliada:</p>
+				<p>Se o resultado for verdadeiro, então o comando_único ou o conjunto de comandos (comando_composto) delimitados pelas palavras-reservadas início e fimse serão executados. Ao término de sua execução o fluxo do algoritmo prossegue pela instrução seguinte à construção, ou seja, o primeiro comando após a palavra-reservada Fimse.</p>
+				<p>Observe e execute no VisuAlg estes dois exemplos de algoritmos para a estrutura de decisão SE:</p>
+				<p><b>Exemplo 1:</b></p>
+				<p>algoritmo "estrutura_de_decisão_simples"</p>
+				<p>var</p>
+				<p>X : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">Escreva ("Digite um valor" ) <br>
+		      Leia (X) <br>
+		      Se X>10 entao
+				</p>
+				<p style="padding-left:6em">Escreva (x, " é maior que 10")</p>
+				<p style="padding-left:3em">Fimse</p>
+				<p>Fimalgoritmo</p>
+
+
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se2-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que o comando Escreva (x, " é maior que 10") só será executado somente se o valor digitado pelo usuário for um valor maior do que 10 como explicitado pela condição SE, como no seguinte fluxograma:</p>
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se2-3.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Simples ( Se ... então ) 1</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Exemplo 2:</b></p>
+				<p>algoritmo "estrutura_de_decisão_simples"</p>
+				<p>var</p>
+				<p>X,cont,soma : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">Escreval ("Digite um valor" ) <br>
+		      Leia (X) <br>
+		      Se X>10 entao		      
+				</p>
+				<p style="padding-left:6em">
+					cont:= cont+1 <br>
+        	soma := cont+ x <br>
+        	Escreval (x, " é maior que 10")
+				</p>
+				<p style="padding-left:3em">
+					Fimse <br>
+					escreval ("o valor de soma é:", soma) <br>
+      		escreval ("o valor de cont é: ",cont)
+					</p>
+				<p>Fimalgoritmo</p>
+
+
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se2-4.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que como os valores de soma e cont são atribuídos dentro do comando SE (entre o Se e o Fimse) os valores de cont e soma só passarão a ter um valor diferente de zero caso o usuário digite um valor maior que 10 para a variável x.</p>
+				<p>Observe no seguinte Gif, que quando o usuário digita um valor menor do que 10, após a avaliação 5>10 retornar falso, o VisuAlg pula para o primeiro comando após o fimse.</p>
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/3se2.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Simples ( Se ... então ) 2</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>No seguinte video é apresentado o comando Se ... então ... fimse, utilizando os operadores relacionais.</p>
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			
+
+									
+			
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/IzJRdgv5fUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->		
+
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+		
+<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>3 - Estruturas de Decisão Composta ( Se ... então ... senão ) </h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/3se3-1.png"/>
+				<p>Nesta estrutura uma única condição (expressão lógica) é avaliada. Se o resultado desta avaliação for verdadeiro, um comando ou conjunto de comandos serão executados. Caso contrário, ou seja, quando o resultado da avaliação for falso, um outro comando ou um outro conjunto de comandos serão executados.</p>
+				<p>Observe no diagrama de blocos a estrutura para instrução se...então...senão, representado pela figura.</p>
+				<p>A sintaxe do VisuAlg para a estrutura de decisão composta:</p>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>SE condição ENTAO </p>
+				<p style="padding-left:3em">	Comando_unico_ou_composto1
+				<p> SENAO </p>
+				<p style="padding-left:3em">	Comando_unico_ou_composto2 </p>
+				<p> Fimse</p>
+				<p><b>Exemplo:</b></p>
+				<p>Se X>10 entao</p>
+				<p style="padding-left:3em">Escreval (x, " é maior que 10")</p>
+				<p>senao</p>
+				<p style="padding-left:3em">Escreval (x, " é menor que 10")</p>
+				<p>Fimse</p>
+				<p>A semântica desta construção é a seguinte: a condição é avaliada: Se o resultado for verdadeiro, então o Comando_unico_ou_composto1 serão executados. Ao término de sua execução o fluxo do algoritmo prossegue pela instrução seguinte à construção, ou seja, o primeiro comando após o Comando_unico_ou_composto2 ou a palavra-reservada Fimse.</p>
+				<p>Nos casos em que a condição é avaliada como falsa, o Comando_unico_ou_composto2 serão executados. Ao término de sua execução o fluxo do algoritmo prossegue pela instrução seguinte à construção, ou seja, o primeiro comando após Comando_unico_ou_composto2 ou a palavra-reservada Fimse.</p>
+				<p>Observe e execute no VisuAlg o exemplo de algoritmo que lê um número e escreve se o mesmo é ou não maior que 10:</p>
+				<p><b>algoritmo "estrutura_de_decisão_composta"</b> <br>
+				var </p>
+				<p style="padding-left:3em"> X : inteiro </p>
+				<p>inicio</p> 
+				<p style="padding-left:3em"> Escreval ("Digite um valor" ) <br>
+				    Leia (X) <br>
+				    Se X>10 entao
+				</p>
+				<p style="padding-left:6em"> Escreval (x, " é maior que 10") <br>
+            Escreval ("outro comando 1")
+				</p>
+				<p style="padding-left:3em">senao</p>
+				<p style="padding-left:6em">Escreval (x, " é menor que 10") <br>
+           Escreval ("outro comando 2")
+				</p>
+				<p style="padding-left:3em">Fimse</p>
+				<p>fimalgoritmo</p>
+				
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se3-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que ao atribuir 10 para a variável X o algoritmo executará o senão, pois como 10 não é maior do que 10 ele cai na segunda opção que seria o senão.</p>
+				<p>Observe também que para este caso temos duas saídas possíveis, determinadas pelo valor lógico de verdadeiro ou falso para a condição X>10. Portanto o Se ... Então ... Senão é utilizado para saídas binárias, ou seja, quando existem apenas duas saídas possíveis para aquela condição.</p>
+				
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Composta ( Se ... então ... senão )</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se3.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Para acrescentar mais uma condição como por exemplo X=10, devemos acrescentar outro comando SE, como no seguinte exemplo:</p>
+				<p><b>algoritmo "estrutura_de_decisão_composta_Concatenado"</b></p>
+				<p>var</p>
+				<p style="padding-left:3em">X : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">Escreval ("Digite um valor" ) <br>
+				      Leia (X) <br>
+				      Se X=10 entao
+				</p>
+				<p style="padding-left:6em">Escreval ("O valor digitado é igual a 10")</p>
+				<p style="padding-left:3em">Fimse <br>
+				      Se X>10 entao
+				</p>
+				<p style="padding-left:6em">Escreval (x, " é maior que 10")</p>
+				<p style="padding-left:3em">Fimse <br>
+				      Se X<10 entao
+				</p>
+				<p style="padding-left:6em"> Escreval (x, " é menor que 10")</p>
+				<p style="padding-left:3em">Fimse</p>
+				<p>Fimalgoritmo</p>
+				<p>Observe que neste caso cobrimos todas as saídas possíveis do algoritmo, X ser maior, menor ou igual ao número digitado pelo usuário.</p>
+				<p>Nos algoritmos, a correta formulação de condições, isto é, expressões lógicas, é de fundamental importância, visto que as estruturas de seleção são baseadas nelas. As diversas formulações das condições podem levar a algoritmos distintos.</p>
+				<p>Os algoritmos podem ser baseados em estruturas concatenadas uma em sequência a outra ou em estruturas aninhadas uma dentro da outra, de acordo com a formulação da condição.</p>
+				<p>A forma como foi escrito este último exemplo é o de estrutura concatenada, temos um se para cada condição. As estruturas concatenadas tem a vantagem de tornar o algoritmo mais legível, facilitando a correção do mesmo em caso de erros.</p>
+
+				</div><!-- FIM paragrafo de texto -->
+
+				<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Composta ( Se ... então ... senão ) Concatenado</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se3.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				<p>Agora observe e execute no VisuAlg um algoritmo com estrutura aninhada:</p>
+				<p><b>Algoritmo "EstruturaCondicional_Aninhado"</b> <br>
+				Var
+				</p>
+				<p style="padding-left:3em">N1, N2 : inteiro <br>
+					MEDIA : real 
+					</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">escreval ("Entre com a primeira nota:") <br>
+				    leia (N1) <br>
+				    escreval ("Entre com a segunda nota:") <br>
+				    leia (N2) <br> 
+				    MEDIA := (N1 + N2) / 2 <br>
+				    se (media >= 7) entao
+				</p>
+				<p style="padding-left:6em">escreval ("Aprovado")</p>
+				<p style="padding-left:3em">senao</p>
+				<p style="padding-left:6em">se (media >= 5) entao</p>
+				<p style="padding-left:9em">escreval ("Recuperação")</p>
+				<p style="padding-left:6em">senao</p>
+				<p style="padding-left:9em">escreval ("Reprovado")</p>
+				<p style="padding-left:6em">fimse</p>
+				<p style="padding-left:3em">fimse <br>
+					escreva ("Sua média é ", MEDIA)
+				</p>
+				<p>fimalgoritmo</p>
+															
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se3-3.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que neste algoritmo temos um SE dentro de um SENAO, a este tipo de estrutura chamamos de estrutura aninhada, pois temos um SE dentro do outro. </p>
+				<p>Note que o primeiro SE inicia na linha 13 e finaliza no fimse da linha 21, o segundo SE está aninhado com o senão do primeiro SE (só será executado dentro de senão) ele se inicia na linha 16 e finaliza na linha 20.</p>
+				<p>As estruturas aninhadas ou encadeadas têm a vantagem de tornar o algoritmo mais rápido pois são efetuados menos testes e menos comparações, o que resulta num menor número de passos para chegar ao final do mesmo.</p>
+				<p>Normalmente se usa estruturas concatenadas nos algoritmos devido à facilidade de entendimento das mesmas e estruturas aninhadas ou encadeadas somente nos casos em que seu uso é fundamental.</p>
+				<p>Lembrando que existem várias formas algorítmicas de se resolver um problema, não existe uma resposta única correta.</p>
+				<p>Observe um fluxograma de uma estrurura aninhada ou encadeada:</p>
+
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/3se3-4.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe no seguinte GIF, a mudança do fluxo de execução do algoritmo dependendo do valor da variavel média, experimente com outros valores de média, caso deseje, aumente o tempo de execução de cada linha ao lado do botão de relógio para observar melhor.</p>
+
+												
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/3se3.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe no GIF, a mudança do fluxo de execução do algoritmo dependendo do valor da variavel média, experimente com outros valores de média, caso deseje, aumente o tempo de execução de cada linha ao lado do botão de relógio para observar melhor.</p>
+
+												
+			</div><!-- FIM paragrafo de texto -->		
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Composta ( Se ... então ... senão ) Aninhado</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/3se3.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p></p>
+												
+			</div><!-- FIM paragrafo de texto -->
+			
+			
+			
+								
+			
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/xDy3YGr7COE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->		
+
+
+
+			<section class="cards-aulas"><!-- cards AULA Lista de exercicios -->
+				
+					<div class="card-single-aulas"> <!-- LISTA DE EXERCICIOS-->
+						<a href="listas/lista5se.pdf" target="_blank"> <img src="icons/pdf.png" alt="" title=""/> </a>
+						<a href="listas/lista5se.pdf" target="_blank"> <h3>Baixe a lista de Exercicios!</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+						
+
+					</div><!-- FIM card single -->
+
+					<div class="card-single-aulas"> <!-- PROXIMA AULA BOTAO-->
+						<a href="4caso.html"> <img src="icons/next.png" alt="" title=""/>  </a>
+						<a href="4caso.html"> <h3>Próxima Aula</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+
+					</div><!-- FIM card AULA -->
+				</section> <!-- cards AULA Lista de exercicios -->
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+<!-- Links uteis e Bibliografia -->
+
+<section class="sobre__final">
+		<div class="container">
+			<div class="w100">
+				<div class="line-text">
+					<div style="width: 50px"></div>
+					<h2>Links Uteis</h2>
+				</div>
+				
+				<p> Canal: <a href="https://www.youtube.com/channel/UCB1knfRXbQLlmz2HrbdHO7Q"><i style="color: red" class="fa fa-youtube-play"></i> Paradoxo </a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UCZZ0NTtOgsLIT4Skr6GUpAw"><i style="color: red" class="fa fa-youtube-play"></i> Node Studio Treinamentos </a> </p>
+				<p> Site: <a href="https://manual.visualg3.com.br/doku.php?id=manual"> Manual do VisuAlg 3.0 </a> </p>			
+
+								
+				<div style="margin-top: 20px;" class="line-text">
+					<div style="width: 50px; "></div>
+					<h2>Referências</h2>
+				</div>
+
+				<ul class="lista_biblio">
+					<li>CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Editora Campus, v. 2, p. 296, 2002.</li>
+					<li>FARRER, Harry; BECKER, Christiano Gonçalves. Algoritmos estruturados: programação estruturada de computadores. Rio de Janeiro: Guanabara, 2000.</li>
+					<li>NETO, Benedito; PEREIRA, Diego; FERNANDES, Sabrina. Apostila de Algoritmo - CEP - Centro De Educação Profissional "Tacredo Neves".</li>
+					<li>Manual do VisuAlg 3.0</li>
+
+				</ul>
+
+
+
+			</div><!-- w100 -->
+
+			
+			<div class="clear"></div>
+		</div><!-- container -->
+	</section>
+
+<!-- FIM Links uteis e Bibliografia -->
+
+<!-- FOOTER -->
+
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h2>REA-LP</h2>
+				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Contato: <a href="mailto:diegoefp_90@hotmail.com">diegoefp_90@hotmail.com</a> </p>
+			</div><!-- FIM w33 footer -->
+
+				<!-- AddToAny BEGIN -->
+			<div class="footer_share w33">
+
+				<h2> <i class="fa fa-share" aria-hidden="true"></i> Compartilhe</h2>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style " id="my_centered_buttons">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_whatsapp"></a>
+					<a class="a2a_button_facebook_messenger"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_email"></a>
+					<a class="a2a_button_telegram"></a>
+				</div>
+				
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+				<!-- AddToAny END -->	
+			</div> <!-- FIM footer share -->
+
+
+
+
+			<div class="clear"></div>
+		</div><!-- FIM container footer -->
+		
+	</footer>
+
+	<footer class="footer2">
+		<a href="https://br.creativecommons.org/licencas/">Conteúdo sob licenciamento Creative Commons - CC BY-NC-SA</a>
+	</footer>
+
+<!-- FIM FOOTER -->
+ 
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+
+	<script>
+				$('nav.menu-mobile h2').click(function(){
+					$('nav.menu-mobile ul').slideToggle();
+				});
+			</script>
+
+			<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		  var myDropdown = document.getElementById("myDropdown");
+		    if (myDropdown.classList.contains('show')) {
+		      myDropdown.classList.remove('show');
+		    }
+		  }
+		}
+	</script>
+
+</body>
+</html>
