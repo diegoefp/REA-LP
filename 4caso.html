@@ -146,6 +146,7 @@
 				<p>Seu funcionamento é o seguinte: ao entrar-se numa construção do tipo Caso/Escolha, a condição1 é testada com a expressão-de-seleção/variável: se for verdadeira, a    sequência-de-comandos-1 é executada e após seu término, o fluxo de execução prossegue pela primeira instrução após o final da construção (Fimescolha); se a condição_1 for falsa, a condição_2 é testada: se esta for verdadeira, a  sequência-de-comandos-2 é executada e ao seu término, a execução prossegue normalmente pela instrução seguinte ao final da construção (Fimescolha). </p>
 				<p>O mesmo raciocínio é estendido a todas as condições da construção. No caso em que todas as condições são avaliadas como falsas, a sequência-de-comandos-extra (correspondente ao outrocaso da construção) é executado.</p>
 				<p>Um caso particular desta construção é aquele em que a sequência-de-comandos-extra não contém nenhuma instrução. Isto ocorre nas situações que não se deseja efetuar nenhuma ação quando todas as condições são falsas. Assim, pode-se dispensar o uso do outrocaso na construção Caso.</p>
+				<p>A estrutura Caso também é muito utilizada na construção de menus de opções.</p>
 				<p><b>Exemplo1:</b></p>
 				<p>Observe e execute o seguinte exemplo no VisuAlg:</p>
 				<p>algoritmo "Times"</p>
@@ -194,6 +195,7 @@
 				
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				<p><b>Exemplo 2:</b></p>
+				<p>Observe e execute o seguinte exemplo no VisuAlg:</p>
 				<p>algoritmo "reajuste_salario_caso"</p>
 				<p style="padding-left:3em">var prof: caractere <br>
           salario, salario_reaj : real
@@ -264,21 +266,81 @@
 				  Your browser does not support the audio element.
 				</audio> 
 
-			</div><!-- FIM AUDIO -->	
-		
-							
+			</div><!-- FIM AUDIO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Exemplo 3: Menu</b></p>
+				<p>Observe e execute o seguinte exemplo no VisuAlg:</p>
+				<p>algoritmo "opcoes_de_jogos" <br>
+					var </p>
+				<p style="padding-left:3em">opcao: inteiro</p>	    
+				<p>inicio</p>	
+				<p style="padding-left:3em">
+					    escreval ("Simulador Pokemon!") <br>
+					    escreval ("Um Pikachu selvagem apareceu !!!") <br>
+					    escreval ("O que você irá fazer?") <br>
+					    escreval ("1 - Atirar Pokebola!") <br>
+					    escreval ("2 - Batalhar!") <br>
+					    escreval ("3 - Fugir!") <br>
+					    leia (opcao) <br>
+					    escolha opcao <br>
+					    caso 1 </p>
+				<p style="padding-left:6em">escreval (" O Pikachu foi capturado!!! ")</p>	         
+				<p style="padding-left:3em">caso 2</p>
+				<p style="padding-left:6em">escreval (" Pikachu foi derrotado, não pode capturar!")</p>	 	    
+				<p style="padding-left:3em">caso 3</p>
+				<p style="padding-left:6em">escreval (" Pikachu fugiu!!! ")</p>	         
+				<p style="padding-left:3em">outrocaso</p>
+				<p style="padding-left:6em">escreval (" Opção invalida ")</p>	    
+				<p style="padding-left:3em">fimescolha</p>	         
+				<p>fimalgoritmo</p>
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/4caso1-5.jpg"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
 			
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				
+				<p>Observe a saída do algoritmo:</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/4caso1-6.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que neste exemplo a estrutura CASO foi utilizada para criar um menu de opções, cada opção executará uma função diferente.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Decisão Múltipla do Tipo Caso/Escolha 3 Menu</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/4caso1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
 			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
 				
-				<iframe src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/SJPTBbBmdME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				
 			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
 
 			<section class="cards-aulas"><!-- cards AULA Lista de exercicios -->
 				
 					<div class="card-single-aulas"> <!-- LISTA DE EXERCICIOS-->
-						<a href="listas/lista4caso.pdf" target="_blank"> <img src="icons/pdf.png" alt="" title=""/> </a>
-						<a href="listas/lista4caso.pdf" target="_blank"> <h3>Baixe a lista de Exercicios!</h3> </a>
+						<a href="listas/lista6caso.pdf" target="_blank"> <img src="icons/pdf.png" alt="" title=""/> </a>
+						<a href="listas/lista6caso.pdf" target="_blank"> <h3>Baixe a lista de Exercicios!</h3> </a>
 						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
 						
 
@@ -317,7 +379,6 @@
 					<h2>Links Uteis</h2>
 				</div>
 				
-				<p> Canal: <a href="https://www.youtube.com/channel/UCB1knfRXbQLlmz2HrbdHO7Q"><i style="color: red" class="fa fa-youtube-play"></i> Paradoxo </a> </p>
 				<p> Canal: <a href="https://www.youtube.com/channel/UCZZ0NTtOgsLIT4Skr6GUpAw"><i style="color: red" class="fa fa-youtube-play"></i> Node Studio Treinamentos </a> </p>
 				<p> Site: <a href="https://manual.visualg3.com.br/doku.php?id=manual"> Manual do VisuAlg 3.0 </a> </p>			
 
