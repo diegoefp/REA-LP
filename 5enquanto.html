@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REA-LP</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Diego Eugenio Fernandes Pereira">
+	<meta name="description" content="Recurso Educacional Aberto para o ensino de Algoritmos e lógica de programação">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="keywords" content="palavras-chave, lorem, ipsum">
+	<!--Colocar aqui meta tags SEO -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="icons/faviconlp.ico">
+
+</head>
+<body>
+<!-- Header -->
+		<header>
+			<div class="container">
+			<div class="logo"><a href="index.html"> <h2>REA-LP</h2></a></div>
+
+				<nav class="menu-desktop">
+					<ul>
+						<li >
+							<a href="index.html">Home</a>
+						</li>
+						<li >
+							<div class="dropdown">
+							  <a class="selected" ><button class="dropbtn" onclick="myFunction()">Aulas
+							    <i class="fa fa-caret-down"></i>
+							  </button></a>
+							  <div class="dropdown-content" id="myDropdown">
+							    <a href="01mat.html">01 - Matematica Fundamental</a>
+							    <a href="02logica.html">02 - Introdução a lógica</a>
+							    <a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+							    <a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+							    <a href="3se.html">3 - Controle de fluxo: Se</a>
+							    <a href="4caso.html">4 - Controle de fluxo: Caso</a>
+							    <a class="selected" href="5enquanto.html">5 - Controle de fluxo: Enquanto e Repita</a>
+							    <a href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+							    <a href="7matrizes.html">7 - Matrizes</a>
+							    <a href="8funcoes.html">8 - Modularização e funções</a>
+							    <a href="9registros.html">9 - Registros (Struct)</a>
+							  </div>
+							 </div> 
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						
+					</ul>
+				</nav> <!-- fecha menu desktop -->
+
+				<nav class="menu-mobile">
+					<h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
+					<ul>
+						<li >
+							<a  href="index.html">Home</a>
+						</li>
+						<li>
+							    <a  href="01mat.html">01 - Matematica Fundamental</a>
+						</li>
+						<li>
+									<a href="02logica.html">02 - Introdução a lógica</a>
+						</li>
+						<li>
+									<a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+						</li>
+						<li>
+									<a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+						</li>
+						<li>
+									<a href="3se.html">3 - Controle de fluxo: Se</a>
+						</li>
+						<li>
+									<a href="4caso.html">4 - Controle de fluxo: Caso</a>
+						</li>
+						<li class="selected">
+									<a href="5enquanto.html">5 - Controle de fluxo: Enquanto e Repita</a>
+						</li>
+						<li>
+									<a href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+						</li>
+						<li>
+									<a href="7matrizes.html">7 - Matrizes</a>
+						</li>
+						<li>
+									<a href="8funcoes.html">8 - Modularização e funções</a>
+						</li>
+						<li>
+									<a href="9registros.html">9 - Registros (Struct)</a>
+						</li>
+					</ul>
+				</nav><!-- fecha menu mobile -->
+
+				<div class="clear"></div>
+			</div>
+		</header>
+<!-- FIM Header -->
+
+
+<!-- Banner interno -->
+
+<section style="background-image: url('images/5enquantobg.jpg');"  class="title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Aula 5 - Controle de Fluxo: Enquanto e Repita</h2>
+			<p>Estruturas de controle de fluxo de execução condicional Enquanto e Repita, estruturas de decisão utilizadas para alterar o fluxo/resultado de um algoritmo.  </p>
+		</div><!-- FIM container -->
+	</section> <!-- FIM title page -->
+
+<!-- FIM banner -INSIDE -->
+
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>1 - Estruturas de Repetição</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/5enquanto1.jpg"/>
+				<p>São muito comuns as situações em que se deseja repetir um determinado trecho de um programa um certo número de vezes. Por exemplo, pode-se citar o caso de um algoritmo que calcula a soma dos números impares entre 500 e 1000 ou então um algoritmo que escreve os números maiores que 0 enquanto a sua soma não ultrapasse 1000.</p>
+				<p>As estruturas de repetição são muitas vezes chamadas de Laços ou também de Loops.
+				A classificação das estruturas de repetição é feito de acordo com o conhecimento prévio do número de vezes que o conjunto de comandos será executado. Assim os Laços se dividem em:
+				</p>
+				<p><b>• Laços Contados:</b> quando se conhece previamente quantas vezes o comando composto no interior da construção será executado;</p>
+				<p><b>• Laços Condicionais:</b> quando não se conhece de antemão o número de vezes que o conjunto de comandos no interior do laço será repetido, pelo fato do mesmo estar amarrado a uma condição sujeita à modificação pelas instruções do interior do laço.</p>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Todo algoritmo que possui um ou mais de seus passos repetidos um determinado número de vezes denomina-se algoritmo com repetição. </p>
+				<p>Com a utilização de estruturas de repetição para a elaboração de algoritmos, torna-se necessário o uso de dois tipos de variáveis para a resolução de diversos tipos de problemas: variáveis contadoras e variáveis acumuladoras. </p>
+				<p>Uma <b>variável contadora</b> é uma variável que recebe um valor inicial, geralmente 0 (zero) antes do início de uma estrutura de repetição, e é incrementada no interior da estrutura de um valor constante, geralmente 1, conforme o exemplo abaixo:
+				</p>
+				<p>... <br>
+					cont := 0 <br>
+					estrutura_de_repetição <br>
+					... <br>
+					cont := cont + 1 <br>
+					... <br>
+					fim_da_estrutura_de_repetição <br>
+					...
+					</p>
+				<p>Uma <b>variável acumuladora</b>  é uma variável que recebe um valor inicial, geralmente 0 (zero) antes do início de uma estrutura de repetição, e é incrementada no interior da estrutura de um valor variável, geralmente a variável usada na estrutura de controle, conforme o exemplo abaixo:</p>
+				<p>... <br>
+				soma := 0 <br>
+				estrutura_de_repetição_com_variável_x <br>
+				...  <br>
+				soma := soma + x <br>
+				... <br>
+				fim_da_estrutura_de_repetição <br>
+				...
+				</p>
+				<p><b>Laços Condicionais:</b></p>
+				<p>Laços condicionais são aqueles cujo conjunto de comandos em seu interior é executado até que uma determinada condição seja satisfeita. Ao contrário do que acontece nos laços contados, nos laços condicionais não se sabe de antemão quantas vezes o corpo do laço será executado.</p>
+				<p>As construções que implementam laços condicionais mais comuns nas linguagens de programação modernas são:</p>
+				<p>• 	<b>Enquanto</b> - laço condicional com teste no início <br>
+				• 	<b>Repita</b> - laço condicional com teste no final 
+				</p>
+				<p>Nos laços condicionais a variável que é testada, tanto no início quanto no final do laço, dever sempre estar associada a um comando que a atualize no interior do laço. Caso isso não ocorra, o programa ficará repetindo indefinidamente este laço, gerando uma situação conhecida como “laço/loop infinito”.</p>
+
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/5enquanto.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Estruturas de Repetição</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/5enquanto1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+
+
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/3wV__mTytKw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+			
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>2 - Laços Condicionais com Teste no Início ( Enquanto ... faça )</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/5enquanto1-1.png"/>
+				<p>Caracteriza-se por uma estrutura que efetua um teste lógico no início de um laço, verificando se é permitido ou não executar o conjunto de comandos no interior do laço.</p>
+				<p></p>
+				<p>Observe na figura como a estrutura enquanto é representada.</p>
+				<p>A sintaxe no VisuAlg é mostrada a seguir: </p>
+				<p><b>enquanto</b> condição <b>faca</b> <p></p>
+				<p style="padding-left:3em">Comando_Unico_ou_Composto</p>	         
+				<p><b>Fimenquanto</b> </p>
+				<p>Sua semântica é a seguinte: ao início da construção Enquanto a condição é testada. Se seu resultado for falso, então o comando composto no seu interior não é executado e a execução prossegue normalmente pela instrução seguinte à palavra-reservada fimenquanto que identifica o final da construção.</p>
+				<p>Se a condição for verdadeira o Comando_Unico_ou_Composto  é executado e ao seu término retorna-se ao teste da condição. Assim, o processo acima será repetido <b>enquanto</b> a condição testada for verdadeira. Quando esta for falsa, o fluxo de execução prossegue normalmente pela instrução seguinte à palavra-reservada fimenquanto que identifica o final da construção.</p>
+
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Uma vez dentro do corpo do laço, a execução somente abandonará o mesmo quando a condição for falsa. O usuário deste tipo de construção deve estar atento à necessidade de que em algum momento a condição deverá ser avaliada como falsa. Caso contrário, o programa permanecerá indefinidamente no interior do laço (laço infinito). Esta condição é chamada de condição de parada.</p>
+				<p>Neste tipo de laço condicional a variável a ser testada deve possuir um valor associado antes da construção do laço.</p>
+				<p>O algoritmo que escreve os números maiores que 0 enquanto a sua soma não ultrapasse 1000 é um exemplo deste tipo de laço:</p>
+				<p><b>Exemplo 1:</b></p>
+				<p>Observe e execute o seguinte exemplo no VisuAlg.</p>
+				<p>algoritmo "soma_1000"</p>
+				<p>var</p>
+				<p style="padding-left:3em">contador:inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">contador:=0 <br>
+				enquanto contador <=1000 faca
+				</p>
+				<p style="padding-left:6em">escreval (contador) <br>
+				contador:=contador+1
+				</p>
+				<p style="padding-left:3em">fimenquanto <br>
+				escreval ("Terminei de contar")</p>
+				<p>
+				fimalgoritmo
+				</p>
+				<p>Observe a saída do algoritmo:</p>
+
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/5enquanto1-1-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Veja que o algoritmo irá imprimir os valores de 0 a 1000 na tela. Execute o algoritmo utilizando o “relógio” executar com timer e observe o loop acontecendo dentro da estrutura do enquanto.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/5enquanto1.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: 1</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/5enquanto1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Menus:</b></p>
+				<p>A estrutura de repetição enquanto é também utilizada para a repetição de menus em conjunto com o SE.</p>
+				<p>Observe e execute o seguinte exemplo no VisuAlg:</p>
+				<p>algoritmo "opcoes_de_jogos_ENQUANTO"</p>
+				<p>var</p>
+				<p style="padding-left:3em">opcao: inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">    opcao:=1 // inicializando a variavel <br>
+				    enquanto opcao<>0 faca
+				</p>
+				<p style="padding-left:6em">escreval ("") // para pular uma linha	 <br>
+				       escreval ("Simulador Pokemon!") <br>
+				       escreval ("Um Pikachu selvagem apareceu !!!") <br>
+				       escreval ("O que você irá fazer?") <br>
+				       escreval ("1 - Atirar Pokebola!") <br>
+				       escreval ("2 - Batalhar!") <br>
+				       escreval ("3 - Fugir!") <br>
+				       escreval ("0 - SAIR") // condicao de saida <br>
+				       leia (opcao) <br>
+				       escolha opcao <br>
+				       caso 0
+				</p>
+				<p style="padding-left:9em"> escreval ("Saindo do simulador Pokemon!")</p>
+				<p style="padding-left:6em">caso 1</p>
+				<p style="padding-left:9em">escreval (" O Pikachu foi capturado!!! ")</p>
+				<p style="padding-left:6em">caso 2</p>
+				<p style="padding-left:9em">escreval (" Pikachu foi derrotado, não pode capturar!")</p>
+				<p style="padding-left:6em">caso 3</p>
+				<p style="padding-left:9em">escreval (" Pikachu fugiu!!! ")</p>
+				<p style="padding-left:6em">outrocaso</p>
+				<p style="padding-left:9em">escreval (" Opção invalida ")</p>
+				<p style="padding-left:6em">fimescolha</p>
+				<p style="padding-left:3em">fimenquanto</p>
+				<p>fimalgoritmo</p>
+				<p>Saída do algoritmo: </p>
+
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/5enquanto1-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que o algoritmo ficará mostrando o menu e suas opções até que a condição de parada/saída seja atendida, que para este caso é digitar a opção “0 – SAIR”. </p>
+				<p>Caso seja digitado um valor que não está contemplado no menu e nos casos, o menu irá se apresentar novamente ao invés de apenas apresentar o texto “Opção inválida” e terminar a execução.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/5enquanto2.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: 2</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/5enquanto1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/8-JWuzb-gIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+			
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>3 - Laços Condicionais com Teste no Final ( Repita ... até )</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/5enquanto2-1.png"/>
+				<p>Caracteriza-se por uma estrutura que efetua um teste lógico no final de um laço, verificando se é permitido ou não executar novamente o conjunto de comandos no interior do mesmo.</p>
+				<p>A sintaxe no VisuAlg é mostrada a seguir:</p>
+				<p><b>repita</b></p>
+				<p style="padding-left:3em">sequência-de-comandos</p>
+				<p><b>ate</b> expressão-lógica</p>
+				<p>Observe na imagem como a estrutura Repita ... até que é representada no diagrama de blocos:</p>
+				<p>Seu funcionamento é bastante parecido ao da construção Enquanto. O comando é executado uma vez. A seguir, a condição é testada: se ela for falsa, a sequência-de-comandos é executada novamente e este processo é repetido até que a condição seja verdadeira, quando então a execução prossegue pelo comando imediatamente seguinte ao final da construção.</p>
+				<P>Esta construção difere da construção Enquanto pelo fato de o comando composto ser executado uma ou mais vezes (pelo menos uma vez), ao passo que na construção Enquanto o comando composto é executado zero ou mais vezes (possivelmente nenhuma). Isto acontece porque na construção Repita o teste é feito no final da construção, ao contrário do que acontece na construção Enquanto, onde o teste da condição é efetuado no início da mesma.</P>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>A construção Repita também difere da construção Enquanto no que se refere à inicialização da variável, visto que na construção Repita a variável pode ser inicializada ou lida dentro do laço.</p>
+				<p>Observe e execute o seguinte exemplo no VisuAlg:</p>
+				<p><b>Exemplo 1:</b></p>
+				<p>algoritmo "Números de 1 a 10 (com repita)"</p>
+				<p style="padding-left:3em">var j: inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">j := 1 <br>
+				repita
+				</p>
+				<p style="padding-left:6em">escreva (j) <br>
+				   j := j + 1
+				</p>
+				<p style="padding-left:3em">ate j > 10</p>
+				<p>fimalgoritmo</p>
+				<p>Execute o algoritmo utilizando o executar com timer e veja como o algoritmo se mantem no laço/loop do repita e só sai quando a variável j é maior do que 10 e este valor já está impresso na tela.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/5enquanto2-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/5enquanto3.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: 1</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/5enquanto1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Exemplo 2:</b></p>
+				<p>O algoritmo que lê um número do teclado indeterminadas vezes e escreve o valor e o seu quadrado, até que seja digitado um valor par:</p>
+				<p>algoritmo "repita_ate_par"</p>
+				<p>var</p>
+				<p style="padding-left:3em">num : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">repita</p>
+				<p style="padding-left:6em">escreval ("digite um numero") <br>
+            leia (num) <br>
+            escreval ("Seu valor é: ", num, " - seu quadrado é: ", num*num)            
+				</p>
+				<p style="padding-left:3em">ate (num mod 2 = 0)</p>
+				<p>fimalgoritmo</p>
+				<p>Veja a saída do algoritmo:</p>
+
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/5enquanto2-3.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que neste exemplo o algoritmo irá mostrar o valor digitado e o valor de seu quadrado até que seja digitado um valor par, como a verificação é feita apenas no final do laço, o valor e o quadrado deste numero par será mostrado na tela e então o algoritmo ira finalizar o laço do repita, pois sua condição de saída foi cumprida.</p>
+
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/5enquanto4.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: 2</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/5enquanto1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+					
+
+
+
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/cgfe08eg85o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+			<section class="cards-aulas"><!-- cards AULA Lista de exercicios -->
+				
+					<div class="card-single-aulas"> <!-- LISTA DE EXERCICIOS-->
+						<a href="listas/lista7enquanto.pdf" target="_blank"> <img src="icons/pdf.png" alt="" title=""/> </a>
+						<a href="listas/lista7enquanto.pdf" target="_blank"> <h3>Baixe a lista de Exercicios!</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+						
+
+					</div><!-- FIM card single -->
+
+					<div class="card-single-aulas"> <!-- PROXIMA AULA BOTAO-->
+						<a href="6para.html"> <img src="icons/next.png" alt="" title=""/>  </a>
+						<a href="6para.html"> <h3>Próxima Aula</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+
+					</div><!-- FIM card AULA -->
+				</section> <!-- cards AULA Lista de exercicios -->
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+
+
+			
+
+<!-- Links uteis e Bibliografia -->
+
+<section class="sobre__final">
+		<div class="container">
+			<div class="w100">
+				<div class="line-text">
+					<div style="width: 50px"></div>
+					<h2>Links Uteis</h2>
+				</div>
+				
+				<p> Canal: <a href="https://www.youtube.com/channel/UCSiPG8JbqfRgetCpmMBIWAw"><i style="color: red" class="fa fa-youtube-play"></i> Pietro Martins De Oliveira </a> </p>
+				<p> Canal: <a href="https://www.youtube.com/channel/UC6SbgEgNLdzr3_iWS_28-ow	"><i style="color: red" class="fa fa-youtube-play"></i> JovemProgramadorBR </a> </p>
+				<p> Site: <a href="https://manual.visualg3.com.br/doku.php?id=manual"> Manual do VisuAlg 3.0 </a> </p>		
+
+
+				
+
+								
+				<div style="margin-top: 20px;" class="line-text">
+					<div style="width: 50px; "></div>
+					<h2>Referências</h2>
+				</div>
+
+				<ul class="lista_biblio">
+					<li>CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Editora Campus, v. 2, p. 296, 2002.</li>
+					<li>FARRER, Harry; BECKER, Christiano Gonçalves. Algoritmos estruturados: programação estruturada de computadores. Rio de Janeiro: Guanabara, 2000.</li>
+					<li>NETO, Benedito; PEREIRA, Diego; FERNANDES, Sabrina. Apostila de Algoritmo - CEP - Centro De Educação Profissional "Tacredo Neves".</li>
+					<li>Manual do VisuAlg 3.0</li>
+
+				</ul>
+
+
+
+			</div><!-- w100 -->
+
+			
+			<div class="clear"></div>
+		</div><!-- container -->
+	</section>
+
+<!-- FIM Links uteis e Bibliografia -->
+
+<!-- FOOTER -->
+
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h2>REA-LP</h2>
+				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Contato: <a href="mailto:realprogramacao@gmail.com">realprogramacao@gmail.com</a> </p>
+			</div><!-- FIM w33 footer -->
+
+				<!-- AddToAny BEGIN -->
+			<div class="footer_share w33">
+
+				<h2> <i class="fa fa-share" aria-hidden="true"></i> Compartilhe</h2>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style " id="my_centered_buttons">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_whatsapp"></a>
+					<a class="a2a_button_facebook_messenger"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_email"></a>
+					<a class="a2a_button_telegram"></a>
+				</div>
+				
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+				<!-- AddToAny END -->	
+			</div> <!-- FIM footer share -->
+
+
+
+
+			<div class="clear"></div>
+		</div><!-- FIM container footer -->
+		
+	</footer>
+
+	<footer class="footer2">
+		<a href="https://br.creativecommons.org/licencas/">Conteúdo sob licenciamento Creative Commons - CC BY-NC-SA</a>
+	</footer>
+
+<!-- FIM FOOTER -->
+ 
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+
+	<script>
+				$('nav.menu-mobile h2').click(function(){
+					$('nav.menu-mobile ul').slideToggle();
+				});
+			</script>
+
+			<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		  var myDropdown = document.getElementById("myDropdown");
+		    if (myDropdown.classList.contains('show')) {
+		      myDropdown.classList.remove('show');
+		    }
+		  }
+		}
+	</script>
+
+</body>
+</html>
