@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REA-LP</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Diego Eugenio Fernandes Pereira">
+	<meta name="description" content="Recurso Educacional Aberto para o ensino de Algoritmos e lógica de programação">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="keywords" content="palavras-chave, lorem, ipsum">
+	<!--Colocar aqui meta tags SEO -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="icons/faviconlp.ico">
+
+</head>
+<body>
+<!-- Header -->
+		<header>
+			<div class="container">
+			<div class="logo"><a href="index.html"> <h2>REA-LP</h2></a></div>
+
+				<nav class="menu-desktop">
+					<ul>
+						<li >
+							<a href="index.html">Home</a>
+						</li>
+						<li >
+							<div class="dropdown">
+							  <a class="selected" ><button class="dropbtn" onclick="myFunction()">Aulas
+							    <i class="fa fa-caret-down"></i>
+							  </button></a>
+							  <div class="dropdown-content" id="myDropdown">
+							    <a href="01mat.html">01 - Matematica Fundamental</a>
+							    <a href="02logica.html">02 - Introdução a lógica</a>
+							    <a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+							    <a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+							    <a href="3se.html">3 - Controle de fluxo: Se</a>
+							    <a href="4caso.html">4 - Controle de fluxo: Caso</a>
+							    <a href="5enquanto.html">5 - Controle de fluxo: Enquanto e Repita</a>
+							    <a class="selected" href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+							    <a href="7matrizes.html">7 - Matrizes</a>
+							    <a href="8funcoes.html">8 - Modularização e funções</a>
+							    <a href="9registros.html">9 - Registros (Struct)</a>
+							  </div>
+							 </div> 
+						</li>
+						<li>
+							<a href="sobre.html">Sobre</a>
+						</li>
+						
+					</ul>
+				</nav> <!-- fecha menu desktop -->
+
+				<nav class="menu-mobile">
+					<h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
+					<ul>
+						<li >
+							<a  href="index.html">Home</a>
+						</li>
+						<li>
+							    <a  href="01mat.html">01 - Matematica Fundamental</a>
+						</li>
+						<li>
+									<a href="02logica.html">02 - Introdução a lógica</a>
+						</li>
+						<li>
+									<a href="1algoritmo.html">1 - Introdução aos algorimtos</a>
+						</li>
+						<li>
+									<a href="2entradasaida.html">2 - Comandos de entrada e saída</a>
+						</li>
+						<li>
+									<a href="3se.html">3 - Controle de fluxo: Se</a>
+						</li>
+						<li>
+									<a href="4caso.html">4 - Controle de fluxo: Caso</a>
+						</li>
+						<li>
+									<a href="5enquanto.html">5 - Controle de fluxo: Enquanto e Repita</a>
+						</li>
+						<li class="selected">
+									<a href="6para.html">6 - Controle de fluxo: Para e Vetores</a>
+						</li>
+						<li>
+									<a href="7matrizes.html">7 - Matrizes</a>
+						</li>
+						<li>
+									<a href="8funcoes.html">8 - Modularização e funções</a>
+						</li>
+						<li>
+									<a href="9registros.html">9 - Registros (Struct)</a>
+						</li>
+					</ul>
+				</nav><!-- fecha menu mobile -->
+
+				<div class="clear"></div>
+			</div>
+		</header>
+<!-- FIM Header -->
+
+
+<!-- Banner interno -->
+
+<section style="background-image: url('images/6parabg.jpg');"  class="title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Aula 6 - Controle de Fluxo: Para e Vetores</h2>
+			<p>Estrutura de controle de fluxo de execução com laços contados (Para faça) e estruta de dados homogênea do tipo Vetor capaz de armazenar vários valores. </p>
+		</div><!-- FIM container -->
+	</section> <!-- FIM title page -->
+
+<!-- FIM banner -INSIDE -->
+
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>1 - Laços Contados ( Para ... faça )</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/6para1-1.png"/>
+				<p>Os laços contados são úteis quando se conhece previamente o número exato de vezes que se deseja executar um determinado conjunto de comandos. Então, este tipo de laço nada mais é que uma estrutura dotada de mecanismos para contar o número de vezes que o corpo do laço (ou seja, o comando composto em seu interior) é executado.</p>
+				<p>No diagrama de blocos a estrutura para instrução Para é representado por:</p>
+				<p>Esta estrutura repete uma sequência de comandos um determinado número de vezes. E é representada pela seguinte sintaxe no VisuAlg:</p>
+				<p><b>para</b> [variável] de [valor-inicial] ate  [valor-limite] [passo incremento] <b>faca</b>
+				<p style="padding-left:3em">sequência-de-comandos</p>   
+				<p><b>fimpara</b></p>
+				<p><b>[variável]</b>: É a variável contadora que controla o número de repetições do laço. Na versão atual, deve ser necessariamente uma variável do tipo inteiro, como todas as expressões deste comando.</p>
+				<p><b>[valor-inicial]: </b>É uma expressão que especifica o valor de inicialização da variável contadora antes da primeira repetição do laço.</p>
+				<p><b>[valor-limite]: </b>É uma expressão que especifica o valor máximo que a variável contadora pode alcançar.</p>
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>[incremento]:</b> É opcional. Quando presente, precedida pela palavra passo, é uma expressão que especifica o incremento que será acrescentado à variável contadora em cada repetição do laço. Quando esta opção não é utilizada, o valor padrão de incremento é 1. </p>
+				<p>Vale a pena ter em conta que também é possível especificar valores negativos para incremento. Por outro lado, se a avaliação da expressão incremento resultar em valor nulo, a execução do algoritmo será interrompida, com a impressão de uma mensagem de erro.</p>
+
+				<p><b>Fimpara:</b> Indica o fim da sequência de comandos a serem repetidos. Cada vez que o programa chega neste ponto, é acrescentado à variável contadora o valor de incremento, e comparado a valor-limite. Se for menor ou igual (ou maior ou igual, quando incremento for negativo), a sequência de comandos será executada mais uma vez; caso contrário, a execução prosseguirá a partir do primeiro comando que esteja após o fimpara.</p>
+				<p>A semântica do laço contado é a seguinte: no início da execução da construção o valor início é atribuído à variável var. A seguir, o valor da variável var é comparado com o valor final. Se var for maior que final, então o comando composto não é executado e a execução do algoritmo prossegue pelo primeiro comando seguinte ao comando_único ou à palavra-reservada fimpara que delimita o final da construção. </p>
+				<p>Por outro lado, se o valor de var for menor ou igual a final, então o comando composto no interior da construção é executado e, ao final do mesmo a variável var é incrementada em 1 unidade. </p>
+				<p>Feito isso, retorna-se à comparação entre var e final e repete-se o processo até que var tenha um valor maior que final, quando o laço é finalizado e a execução do algoritmo prossegue pela instrução imediatamente seguinte à construção.</p>
+				<p><b>Exemplo 1:</b></p>
+				<p>Observe e execute no VisuAlg o algoritmo que escreve a tabuada de um número específico até 10 vezes:</p>
+				<p>algoritmo "Tabuada_PARA" <br>
+				var</p>
+				<p style="padding-left:3em">   i, tab : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">escreval ("Tabuada") <br>
+				      escreval ("digite o número da tabuada") <br>
+				      leia (tab) <br>
+				      para i de 1 ate 10 faca
+				</p>
+				<p style="padding-left:6em"> escreval (i, "  X ", tab, " = ", i*tab)</p>
+				<p style="padding-left:3em">fimpara</p>
+				<p>fimalgoritmo</p>
+				<p>Veja uma possível saída do algoritmo:</p>
+				
+								
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/6para1-2.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe no seguinte GIF, o loop acontecendo dentro do para..fimpara um número determinado de vezes que no caso é 10. Note também a variável contadora i sendo incrementada a cada vez que o algoritmo passa pelo para até que chegue em 11 (não cumprindo a condição de execução ou entrada) e termine a sua execução.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para1.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Laços Contados ( Para ... faça )</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Exemplo 2:</b></p>
+				<p>Caso queira controlar o número de laços que o algoritmo irá realizar é só utilizar uma variável e atualiza-la dentro do programa.</p>
+				<p>Observe e execute no VisuAlg o algoritmo que escreve a tabuada de um número específico um determinado número de vezes:</p>
+				<p>algoritmo "Tabuada_PARA2"</p>
+				<p>var</p>
+				<p style="padding-left:3em">i, tab, num : inteiro</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">escreval ("Tabuada") <br>
+				      escreval ("digite o número da tabuada") <br>
+				      leia (tab) <br>
+				      escreval ("deseja executar a tabuada de ", tab, " até quantas vezes?") <br>
+				      leia (num) <br>
+				      para i de 1 ate num faca
+				</p>
+				<p style="padding-left:6em">escreval (i, "  X ", tab, " = ", i*tab)</p>
+				<p style="padding-left:3em">fimpara</p>
+				<p>fimalgoritmo</p>
+				<p>Veja uma possível saída do algoritmo:</p>
+
+			</div><!-- FIM paragrafo de texto -->
+				
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/6para1-3.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+			
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que neste exemplo o para foi executado de 1 até o valor armazenado na variavel num que neste caso foi 15.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Laços Contados ( Para ... faça ) Exemplo 2</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para2.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Para Decrescente:</b></p>
+				<p>Existe uma condição especial em que a contagem deve ser de forma decrescente, onde o valor a variável é decrementado em uma unidade.</p>
+				<p><b>Exemplo 3:</b></p>
+				<p>Observe e execute no VisuAlg o algoritmo que faz uma contagem regressiva:</p>
+				<p>algoritmo "Numeros de 10 a 1"</p>
+				<p>var</p>
+				<p style="padding-left:3em">j: inteiro</p>
+				<p >inicio </p>
+				<p style="padding-left:3em">	para j de 10 ate 1 passo -1 faca</p>
+				<p style="padding-left:6em">escreva (j:3)</p>
+				<p style="padding-left:3em">fimpara</p>
+				<p>fimalgoritmo</p>
+				<p>Veja a saída do algoritmo:</p>
+				
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/6para1-4.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Observe que para fazer o decremento é necessario utilizar o "passo -1" pois por padrao o para...faça utiliza um incremento de +1.</p>
+				<p>Veja no seguinte GIF o loop acontecendo e a variável j sendo decrementada de 10 até alcançar o valor de zero e o loop ser terminado.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para2.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+						
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Laços Contados ( Para ... faça ) Decrescente</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para3.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->
+			
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/KDdlrPxQECU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+			
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+
+
+<div style="border-top: 2px solid	rgb(210,210,210);	padding-top: 20px; "></div> <!-- DIVISOR -------------------------------------------------------->
+
+<!-- Texto aula -->
+
+<section class="aula__texto">
+		<div class="container">
+			
+			<div class="titulo_interno"> <!-- TITULO INTERNO  -->
+					<h2>2 - Vetores</h2>
+			</div> <!-- FIM TITULO INTERNO  -->
+
+			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
+				<img src="images/6para1-5.jpeg"/>
+				<p> Vetores são um tipo de <b>Estruturas de dados homogêneas:</b>  As estruturas de dados homogêneas permitem agrupar diversas informações dentro de uma mesma variável. Este agrupamento ocorrerá obedecendo sempre ao <b>mesmo tipo de dado</b>, e é por esta razão que estas estruturas são chamadas homogêneas.</p>
+				<p>A utilização deste tipo de estrutura de dados recebe diversos nomes, como: variáveis indexadas, variáveis compostas, variáveis subscritas, arranjos, vetores, matrizes, tabelas em memória ou arrays. Os nomes mais usados e que utilizaremos para estruturas homogêneas são: <b>matrizes</b> e <b>vetores </b>(matriz de uma linha e várias colunas).</p>
+				<p><b>Vetores:</b></p>
+				<p>Este tipo de estrutura em particular é também denominado por profissionais da área como matrizes unidimensionais. Sua utilização mais comum está vinculada à criação de tabelas. </p>
+				<p>Caracteriza-se por ser definida uma única variável vinculada dimensionada com um determinado tamanho. A dimensão de uma matriz é constituída por constantes inteiras e positivas. Os nomes dados às matrizes seguem as mesmas regras de nomes utilizados para indicar as variáveis simples.</p>
+				<p>A sintaxe do comando de definição/declaração de vetores no VisuAlg é a seguinte:</p>
+				
+				
+
+				<div class="clear"></div>
+			</div><!-- FIM single aula texto -->
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Var</p>
+				<p style="padding-left:3em">Nome_do_vetor:vetor[coluna_inicial..coluna_final] de Tipo_de_dados</p>
+				<p>Exemplo:</p>
+				<p>Var</p>
+				<p style="padding-left:3em">vet:vetor[1..5] de inteiro</p>
+				<p>Neste caso estamos criando um vetor que possui 5 posições, imagine como se casa posição fosse um vagão de trem e cada vagão é capaz de armazenar um valor do tipo declarado como se fosse uma variável normal.</p>
+				<p>Observe o seguinte GIF demostrando um vetor de 5 posições de inteiros, armazenando valores de inteiros em suas posições.</p>
+				
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para3.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Vetores</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para4.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Operações Básicas com Vetores</b></p>
+				<p>Do mesmo modo que acontece com variáveis simples, também é possível operar com variáveis indexadas (matrizes). Contudo não é possível operar diretamente com o conjunto completo, mas com cada um de seus componentes isoladamente.</p>
+				<p>O acesso individual a cada componente de um vetor é realizado pela especificação de sua posição na mesma por meio do seu índice. No exemplo anterior foi definida uma variável vet capaz de armazenar 5 números inteiros. Para acessar um elemento deste vetor deve-se fornecer o nome do mesmo e o índice do componente desejado do vetor (um número de 1 a 5, neste caso).</p>
+				<p>Por exemplo, vet[1] indica o primeiro elemento do vetor, vet[2] indica o segundo elemento do vetor e vet[5] indica o último elemento do vetor.</p>
+				<p>Portanto, não é possível operar diretamente sobre vetores como um todo, mas apenas sobre seus componentes, um por vez. </p>
+				<p>Por exemplo, para somar dois vetores é necessário somar cada um de seus componentes dois a dois. Da mesma forma as operações de atribuição, leitura e escrita de vetores devem ser feitas elemento a elemento.</p>
+				<p><b>Atribuição de vetores:</b></p>
+				<p>Na aula sobre as instruções primitivas, o comando de atribuição foi definido como:</p>
+				<p>nome_da_variável := expressão</p>
+				<p>No caso de vetores (variáveis indexadas), além do nome da variável deve-se necessariamente fornecer também o índice do componente do vetor onde será armazenado o resultado da avaliação da expressão.</p>
+				<p><b>Exemplo: </b> <br>
+				vet[1]:= 15 <br>
+				vet[2]:= 150 <br>
+				vet[5]:= 10
+				</p>
+				<p> <b>Leitura de Dados de Vetores:</b></p>
+				<p>A leitura de um vetor é feita passo a passo, um de seus componentes por vez, usando a mesma sintaxe da instrução primitiva da entrada de dados, onde além do nome da variável, deve ser explicitada a posição do componente lido:</p>
+				<p>LEIA nome_da_variável [ índice ]</p>
+				<p><b>Exemplo:</b></p>
+				<p>Leia (vet[1])</p>
+				<p>Desta forma seria custoso ler ou atribuir valores ou até mesmo imprimir o conteúdo de um vetor um a um.</p>
+				<p>Portanto é utilizado dos laços contados (Para) a fim de efetuar a operação de leitura repetidas vezes, em cada uma delas lendo um determinado componente do vetor. </p>
+				<p>De fato está construção é muito comum quando se opera com vetores, devido à necessidade de se realizar uma mesma operação com os diversos componentes dos mesmos. Na verdade, são raras as situações que se deseja operar isoladamente com um único componente do vetor.</p>
+				<p>O algoritmo a seguir exemplifica a operação de leitura de um vetor:</p>
+				<p><b>Exemplo 1:</b></p>
+				<p>algoritmo "exemplo_leitura_de_vetor"</p>
+				<p>var</p>
+				<p style="padding-left:3em">vet:vetor[1..10] de inteiro <br>
+				  i : inteiro
+				</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">Para i de 1 até 10 faca</p>
+				<p style="padding-left:6em">        leia (vet[i])</p>
+				<p style="padding-left:3em"> fimpara</p>
+				<p>fimalgoritmo</p>
+				<p>Veja a saída do algoritmo.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/6para1-6.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Veja na área das variáveis que as posições do vetor foram preenchidas de acordo com o que foi lido a partir da entrada do usuário. </p>
+				<p>Observe no seguinte GIF como as posições do vetor vão sendo preenchidas pelo usuário durante a execução.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para4.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Vetores - Leitura de Dados </h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Escrita de Dados de Vetores:</b></p>
+				<p>A escrita de um vetor obedece à mesma sintaxe da instrução primitiva de saída de dados e também vale lembrar que, além do nome do vetor, deve-se também especificar por meio do índice o componente a ser escrito:</p>
+				<p>Escreva ( nome_da_variavel [ índice ])</p>
+				<p>O algoritmo a seguir exemplifica a operação de leitura e escrita de um vetor, utilizando a construção Para:</p>
+				<p><b>Exemplo 2:</b></p>
+				<p>algoritmo "exemplo_escrita_de_vetor"</p>
+				<p>var</p>
+				<p style="padding-left:3em">vet:vetor[1..10] de inteiro <br>
+				  i : inteiro
+				</p>
+				<p>inicio</p>
+				<p style="padding-left:3em">Para i de 1 ate 10 faca</p>
+				<p style="padding-left:6em">leia (vet[i])</p>
+				<p style="padding-left:3em">  fimpara <br>
+				Para i de 1 até 10 faca </p>
+				<p style="padding-left:6em">escreval(vet[i])</p>
+				<p style="padding-left:3em">  fimpara </p>
+				<p>fimalgoritmo</p>
+				<p>Veja que o primeiro para é responsável por fazer a leitura (preencher) o vetor, o segundo para é responsável por imprimir o conteúdo deste vetor.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="img__aula__single">  <!-- IMAGEM CENTRALIZADA  -->
+				<img src="images/6para1-7.png"/>
+				
+			</div><!-- FIM IMAGEM CENTRALIZADA -->
+
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Vetores - Escrita de Dados </h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>Um exemplo mais interessante é mostrado a seguir, onde um vetor de dez números é lido e guardado no vetor números. Paralelamente, a soma destes números é calculada e mantida na variável soma, que posteriormente é escrita. Este algoritmo foi escrito de maneira amigável para o usuário pois mostra qual posição do vetor está sendo lida e escrita.</p>
+				<p><b>Exemplo 3:</b></p>
+				<p style="padding-left:0em">algoritmo "soma_de_vetor"</p>
+				<p style="padding-left:0em">var</p>
+				<p style="padding-left:3em">vet:vetor[1..10] de inteiro <br>
+				  i,soma : inteiro
+				</p>
+				<p style="padding-left:0em">inicio</p>
+				<p style="padding-left:3em">soma:= 0 <br>
+				   Para i de 1 ate 10 faca
+				</p>
+				<p style="padding-left:6em">        escreval ("digite o valor para a posicao: ",i) <br>
+				        leia (vet[i]) <br>
+				        soma:= soma+vet[i]
+				</p>
+				<p style="padding-left:3em"> fimpara <br>
+					Para i de 1 ate 10 faca
+				</p>
+				<p style="padding-left:6em">escreval("o valor armazenado na posicao: ",i, " é: ",vet[i])</p>
+				<p style="padding-left:3em">   fimpara <br>
+				escreval ("a soma dos valores do vetor é:", soma)
+				</p>
+				<p style="padding-left:0em">fimalgoritmo</p>
+		
+
+			</div><!-- FIM paragrafo de texto -->
+
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para5.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Vetores Exemplo 3 </h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p><b>Exemplos de Aplicação de Vetores:</b></p>
+				<p>O espectro de aplicação de vetores em algoritmos é muito extenso, mas normalmente os vetores são usados em duas tarefas muito importantes no processamento de dados: pesquisa e classificação.</p>
+				<p>A pesquisa consiste na verificação da existência de um valor dentro de um vetor. Trocando em miúdos, pesquisar um vetor consiste em procurar dentre seus componentes um determinado valor.</p>
+				<p>A classificação de um vetor consiste em arranjar seus componentes numa determinada ordem, segundo um critério específico. Por exemplo, este critério pode ser a ordem alfabética de um vetor de dados caractere, ou então a ordem crescente ou decrescente para um vetor de dados numéricos. Há vários métodos de classificação como o SelectionSort, BubbleSort, MergeSort, InsertSort, dentre outros.</p>
+				<p>Observe no seguinte GIF um vetor com 10 posições sendo ordenado pelo metodo InserSort:</p>
+				
+			</div><!-- FIM paragrafo de texto -->
+
+
+			<div class="img__aula__single">  <!-- GIF CENTRALIZADO  -->
+				<img  src="images/6para6.gif"/>
+				
+				
+			</div><!-- FIM GIF CENTRALIZADO -->
+
+			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
+				
+				<p>O InsertSort se asemelha muito a forma como ordenamos cartas de baralho em nossas mãos: procuramos por uma carta de valor menor e colocamos ela a esquerda da mão.</p>
+
+			</div><!-- FIM paragrafo de texto -->
+
+			<div class="audio__aula__single"><!-- AUDIO -->
+				<h2> <i class="fa fa-headphones"></i> Escute essa aula: Exemplos de Aplicação de Vetores:</h2><!-- TITULO DO AUDIO -->
+				<audio controls> 
+				  <source src="audios/6para1.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				</audio> 
+
+			</div><!-- FIM AUDIO -->	
+
+
+			<div class="youtube__aula__single">  <!-- YOUTUBE VIDEO CENTRALIZADO  -->
+				
+				<iframe src="https://www.youtube.com/embed/_xZjN4jyEZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+			</div><!-- FIM YOUTUBE VIDEO CENTRALIZADO -->
+
+			<section class="cards-aulas"><!-- cards AULA Lista de exercicios -->
+				
+					<div class="card-single-aulas"> <!-- LISTA DE EXERCICIOS-->
+						<a href="listas/lista.pdf" target="_blank"> <img src="icons/pdf.png" alt="" title=""/> </a>
+						<a href="listas/lista.pdf" target="_blank"> <h3>Baixe a lista de Exercicios!</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+						
+
+					</div><!-- FIM card single -->
+
+					<div class="card-single-aulas"> <!-- PROXIMA AULA BOTAO-->
+						<a href="7matriz.html"> <img src="icons/next.png" alt="" title=""/>  </a>
+						<a href="7matriz.html"> <h3>Próxima Aula</h3> </a>
+						<!--<p>Descrição:Assim mesmo, o acompanhamento das preferências de consumo é uma das consequências da gestão inovadora da qual fazemos parte. </p> -->
+
+					</div><!-- FIM card AULA -->
+				</section> <!-- cards AULA Lista de exercicios -->
+
+
+
+			<div class="clear"></div>
+			</div><!-- FIM container cards AULA-->
+
+		</div><!-- FIM aula container -->
+		 
+	</section>
+
+<!-- FIM texto aula -->
+
+
+
+			
+
+<!-- Links uteis e Bibliografia -->
+
+<section class="sobre__final">
+		<div class="container">
+			<div class="w100">
+				<div class="line-text">
+					<div style="width: 50px"></div>
+					<h2>Links Uteis</h2>
+				</div>
+				
+				<p> Canal: <a href="https://www.youtube.com/channel/UCZZ0NTtOgsLIT4Skr6GUpAw"><i style="color: red" class="fa fa-youtube-play"></i> Node Studio Treinamentos </a> </p>
+				<p> Site: <a href="https://manual.visualg3.com.br/doku.php?id=manual"> Manual do VisuAlg 3.0 </a> </p>
+				<p> Site: <a href="https://visualgo.net/pt/sorting	"> visualgo : Visualização de algoritmos de ordenação de vetores </a> </p>
+
+					
+
+								
+				<div style="margin-top: 20px;" class="line-text">
+					<div style="width: 50px; "></div>
+					<h2>Referências</h2>
+				</div>
+
+				<ul class="lista_biblio">
+					<li>CORMEN, Thomas H. et al. Algoritmos: teoria e prática. Editora Campus, v. 2, p. 296, 2002.</li>
+					<li>FARRER, Harry; BECKER, Christiano Gonçalves. Algoritmos estruturados: programação estruturada de computadores. Rio de Janeiro: Guanabara, 2000.</li>
+					<li>NETO, Benedito; PEREIRA, Diego; FERNANDES, Sabrina. Apostila de Algoritmo - CEP - Centro De Educação Profissional "Tacredo Neves".</li>
+					<li>Manual do VisuAlg 3.0</li>
+
+				</ul>
+
+
+
+			</div><!-- w100 -->
+
+			
+			<div class="clear"></div>
+		</div><!-- container -->
+	</section>
+
+<!-- FIM Links uteis e Bibliografia -->
+
+<!-- FOOTER -->
+
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h2>REA-LP</h2>
+				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Contato: <a href="mailto:realprogramacao@gmail.com">realprogramacao@gmail.com</a> </p>
+			</div><!-- FIM w33 footer -->
+
+				<!-- AddToAny BEGIN -->
+			<div class="footer_share w33">
+
+				<h2> <i class="fa fa-share" aria-hidden="true"></i> Compartilhe</h2>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style " id="my_centered_buttons">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_whatsapp"></a>
+					<a class="a2a_button_facebook_messenger"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_email"></a>
+					<a class="a2a_button_telegram"></a>
+				</div>
+				
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+				<!-- AddToAny END -->	
+			</div> <!-- FIM footer share -->
+
+
+
+
+			<div class="clear"></div>
+		</div><!-- FIM container footer -->
+		
+	</footer>
+
+	<footer class="footer2">
+		<a href="https://br.creativecommons.org/licencas/">Conteúdo sob licenciamento Creative Commons - CC BY-NC-SA</a>
+	</footer>
+
+<!-- FIM FOOTER -->
+ 
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
+
+	<script>
+				$('nav.menu-mobile h2').click(function(){
+					$('nav.menu-mobile ul').slideToggle();
+				});
+			</script>
+
+			<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		  var myDropdown = document.getElementById("myDropdown");
+		    if (myDropdown.classList.contains('show')) {
+		      myDropdown.classList.remove('show');
+		    }
+		  }
+		}
+	</script>
+
+</body>
+</html>
