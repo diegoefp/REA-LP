@@ -147,8 +147,8 @@
 				<p>E assim por diante. A utilidade de matrizes, desta forma, é muito grande. No exemplo acima, cada matriz pode ser utilizada para armazenar uma quantidade maior de informações.</p>
 				<p><b>Operações Básicas com Matrizes de Duas Dimensões:</b></p>
 				<p>Do mesmo modo que acontece com os vetores, não é possível operar diretamente com o conjunto completo, mas com cada um de seus componentes isoladamente.</p>
-				<p>O acesso individual a cada componente de uma matriz é realizado pela especificação de sua posição na mesma por meio do seu índice. </p>
-				<p>No exemplo anterior foi definida uma matriz capaz de armazenar 5 números inteiros em cada uma das 4 linhas. Para acessar um elemento desta matriz deve-se fornecer o nome da mesma e o índice da linha e da coluna do componente desejado da matriz (um número de 1 a 4 para a linha e um número de 1 a 5 para a coluna, neste caso).</p>
+				<p>O acesso individual a cada componente de uma matriz é realizado pela especificação de sua posição na mesma, por meio do seu índice. </p>
+				<p>No exemplo anterior, foi definida uma matriz capaz de armazenar 5 números inteiros em cada uma das 4 linhas. Para acessar um elemento desta matriz deve-se fornecer o nome da mesma e o índice da linha e da coluna do componente desejado da matriz (um número de 1 a 4 para a linha e um número de 1 a 5 para a coluna, neste caso).</p>
 				<p>Por exemplo: </p>
 				<p style="padding-left:3em">•	matriz[1,1] indica o primeiro elemento da primeira linha da matriz <br>
 				•	matriz[1,2] indica o segundo elemento da primeira linha da matriz <br>
@@ -156,7 +156,7 @@
 				•	matriz[4,5] indica o último elemento da última linha da matriz.
 				</p>
 				<p>Da mesma forma como vetores, não é possível operar diretamente sobre matrizes como um todo, mas apenas sobre seus componentes, um por vez. </p>
-				<p>Por exemplo, para somar duas matrizes é necessário somar cada um de seus componentes dois a dois. Da mesma forma as operações de atribuição, leitura e escrita de matrizes devem ser feitas elemento a elemento.</p>
+				<p>Por exemplo, para somar duas matrizes é necessário somar cada um de seus componentes dois a dois. Da mesma forma as operações de atribuição, leitura e escrita de matrizes, devem ser feitas elemento a elemento.</p>
 								
 			</div><!-- FIM paragrafo de texto -->
 
@@ -172,7 +172,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><p><b>Atribuição de Uma Matriz de Duas Dimensões:</b></p>
-				<p>Na atribuição de matrizes, da mesma forma que nos vetores, além do nome da variável deve-se necessariamente fornecer também o índice do componente da matriz onde será armazenado o resultado da avaliação da expressão.</p>
+				<p>Na atribuição de matrizes, da mesma forma que nos vetores, além do nome da variável, deve-se, necessariamente, fornecer também o índice do componente da matriz, onde será armazenado o resultado da avaliação da expressão.</p>
 				<p>O índice referente ao elemento é composto por tantas informações quanto o número de dimensões da matriz. No caso de ter duas dimensões, o primeiro número se refere à linha e o segundo número se refere à coluna da matriz em que se encontra a informação.</p>
 				<p><b>Exemplo:</b></p>
 				<p>matriz[1,1]:= 15 <br>
@@ -202,7 +202,7 @@
 				<p>Leia (nome_da_matriz [Linha, Coluna])</p>
 				<p><b>Exemplo:</b></p>
 				<p>Leia ( matriz[1,1])</p>
-				<p>Uma observação importante a ser feita é a utilização de construções <b>Para</b> aninhadas ou encadeada a fim de efetuar a operação de leitura repetidas vezes, em cada uma delas lendo um determinado componente da matriz. Esta construção é muito comum quando se opera com matrizes, devido à necessidade de se realizar uma mesma operação com os diversos componentes das mesmas.</p>
+				<p>Uma observação importante a ser feita é a utilização de construções <b>Para</b> aninhadas ou encadeada, a fim de efetuar a operação de leitura repetidas vezes, em cada uma delas lendo um determinado componente da matriz. Esta construção é muito comum quando se opera com matrizes, devido à necessidade de se realizar uma mesma operação com os diversos componentes das mesmas.</p>
 				<p>O algoritmo a seguir exemplifica a operação de leitura de uma matriz:</p>
 				<p><b>Exemplo Leitura:</b></p>
 				<p style="padding-left:0em">algoritmo "exemplo_leitura_de_matriz"</p>
@@ -228,7 +228,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe que a variável [i] do primeiro para é responsável por “andar” pelas linhas, quando ele entra no seu primeiro valor 1, o programa segue para o segundo para e o J é responsável por andar pelas colunas da matriz, no exemplo da coluna 1 a 5, após terminado o J, o programa volta para o primeiro para, que atualiza para a segunda linha, então o segundo para do J é executado de 1 a 5 novamente e assim por diante até que toda a matriz tenha sido lida. </p>
+				<p>Observe que a variável [i] do primeiro para é responsável por “andar” pelas linhas, quando ele entra no seu primeiro valor 1, o programa segue para o segundo para e o J é responsável por andar pelas colunas da matriz, no exemplo da coluna 1 a 5, após terminado o J, o programa volta para o primeiro para, que atualiza para a segunda linha, então o segundo para do J é executado de 1 a 5 novamente e assim por diante, até que toda a matriz tenha sido lida. </p>
 				<p>Veja o exemplo no GIF a seguir:</p>
 
 			</div><!-- FIM paragrafo de texto -->
@@ -249,7 +249,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Escrita de Dados de Uma Matriz de Duas Dimensões</b></p>
-				<p>A escrita de uma matriz obedece à mesma sintaxe da instrução primitiva de saída de dados e também vale lembrar que, da mesma forma que com vetores, além do nome da matriz, deve-se também especificar por meio do índice o componente a ser escrito.</p>
+				<p>A escrita de uma matriz obedece à mesma sintaxe da instrução primitiva de saída de dados, e também vale lembrar, que, da mesma forma com vetores, além do nome da matriz, deve-se também especificar por meio do índice o componente a ser escrito.</p>
 				<p>Escreva (nome_da_matriz [Linha, Coluna])</p>
 				<p><b>Exemplo:</b></p>
 				<p>Escreva ( matriz[1,1])</p>
@@ -296,7 +296,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p>Um exemplo mais interessante é mostrado a seguir, onde uma matriz de 4 linhas e 4 colunas é lida. Paralelamente, a soma destes números é calculada e mantida na variável soma, que posteriormente é escrita. </p>
-				<p>Este algoritmo foi escrito de maneira amigável para o usuário pois mostra qual posição da matriz está sendo lida e escrita, e a matriz é escrita na forma de uma matriz convencional.</p>
+				<p>Este algoritmo foi escrito de maneira amigável para o usuário, pois mostra qual posição da matriz está sendo lida e escrita, e a matriz é escrita na forma de uma matriz convencional.</p>
 				<p><b>Exemplo:</b></p>
 				<p style="padding-left:0em">algoritmo "exemplo_matriz_amigavel_soma"</p>
 				<p style="padding-left:0em">var</p>

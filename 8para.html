@@ -125,9 +125,9 @@
 
 			<div class="aula__texto__single">  <!-- Possui imagem e texto lado a lado -->
 				<img src="images/6para1-1.png"/>
-				<p>Os laços contados são úteis quando se conhece previamente o número exato de vezes que se deseja executar um determinado conjunto de comandos. Então, este tipo de laço nada mais é que uma estrutura dotada de mecanismos para contar o número de vezes que o corpo do laço (ou seja, o comando composto em seu interior) é executado.</p>
-				<p>No diagrama de blocos a estrutura para instrução Para é representado pela imagem:</p>
-				<p>Esta estrutura repete uma sequência de comandos um determinado número de vezes. E é representada pela seguinte sintaxe no VisuAlg:</p>
+				<p>Os laços contados são úteis quando se conhece previamente o número exato de vezes que se deseja executar um determinado conjunto de comandos. Então, este tipo de laço, nada mais é que uma estrutura dotada de mecanismos para contar o número de vezes que o corpo do laço (ou seja, o comando composto em seu interior), é executado.</p>
+				<p>No diagrama de blocos, a estrutura para instrução Para é representado pela imagem:</p>
+				<p>Esta estrutura repete uma sequência de comandos um determinado número de vezes, e é representada pela seguinte sintaxe no VisuAlg:</p>
 				<p><b>para</b> [variável] de [valor-inicial] ate  [valor-limite] [passo incremento] <b>faca</b>
 				<p style="padding-left:3em">sequência-de-comandos</p>   
 				<p><b>fimpara</b></p>
@@ -142,11 +142,11 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>[incremento]:</b> É opcional. Quando presente, precedida pela palavra passo, é uma expressão que especifica o incremento que será acrescentado à variável contadora em cada repetição do laço. Quando esta opção não é utilizada, o valor padrão de incremento é 1. </p>
-				<p>Vale a pena ter em conta que também é possível especificar valores negativos para incremento. Por outro lado, se a avaliação da expressão incremento resultar em valor nulo, a execução do algoritmo será interrompida, com a impressão de uma mensagem de erro.</p>
+				<p>Vale a pena ter em conta, que também é possível especificar valores negativos para o incremento. Por outro lado, se a avaliação da expressão incremento resultar em valor nulo, a execução do algoritmo será interrompida, com a impressão de uma mensagem de erro.</p>
 
 				<p><b>Fimpara:</b> Indica o fim da sequência de comandos a serem repetidos. Cada vez que o programa chega neste ponto, é acrescentado à variável contadora o valor de incremento, e comparado a valor-limite. Se for menor ou igual (ou maior ou igual, quando incremento for negativo), a sequência de comandos será executada mais uma vez; caso contrário, a execução prosseguirá a partir do primeiro comando que esteja após o fimpara.</p>
-				<p>A semântica do laço contado é a seguinte: no início da execução da construção o valor início é atribuído à variável var. A seguir, o valor da variável var é comparado com o valor final. Se var for maior que final, então o comando composto não é executado e a execução do algoritmo prossegue pelo primeiro comando seguinte ao comando_único ou à palavra-reservada fimpara que delimita o final da construção. </p>
-				<p>Por outro lado, se o valor de var for menor ou igual a final, então o comando composto no interior da construção é executado e, ao final do mesmo a variável var é incrementada em 1 unidade. </p>
+				<p>A semântica do laço contado é a seguinte: no início da execução da construção o valor início é atribuído à variável var. A seguir, o valor da variável var é comparado com o valor final. Se var for maior que final, então o comando composto não é executado e a execução do algoritmo prossegue pelo primeiro comando seguinte ao comando_único ou à palavra-reservada fimpara, que delimita o final da construção. </p>
+				<p>Por outro lado, se o valor de var for menor ou igual a final, então o comando composto no interior da construção é executado e, ao final do mesmo a variável var é incrementada em 1 (uma) unidade. </p>
 				<p>Feito isso, retorna-se à comparação entre var e final e repete-se o processo até que var tenha um valor maior que final, quando o laço é finalizado e a execução do algoritmo prossegue pela instrução imediatamente seguinte à construção.</p>
 				<p><b>Exemplo 1:</b></p>
 				<p>Observe e execute no VisuAlg o algoritmo que escreve a tabuada de um número específico até 10 vezes:</p>
@@ -174,7 +174,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe no seguinte GIF, o loop acontecendo dentro do para..fimpara um número determinado de vezes que no caso é 10. Note também a variável contadora i sendo incrementada a cada vez que o algoritmo passa pelo para até que chegue em 11 (não cumprindo a condição de execução ou entrada) e termine a sua execução.</p>
+				<p>Observe no seguinte GIF, o loop acontecendo dentro do para..fimpara um número determinado de vezes que no caso é 10. Note também a variável contadora i sendo incrementada a cada vez que o algoritmo passa pelo para até que chegue em 11 (não cumprindo a condição de execução ou entrada), e termine a sua execução.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 
@@ -196,7 +196,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Exemplo 2:</b></p>
-				<p>Caso queira controlar o número de laços que o algoritmo irá realizar é só utilizar uma variável e atualiza-la dentro do programa.</p>
+				<p>Caso queira controlar o número de laços que o algoritmo irá realizar é só utilizar uma variável e atualizá-la dentro do programa.</p>
 				<p>Observe e execute no VisuAlg o algoritmo que escreve a tabuada de um número específico um determinado número de vezes:</p>
 				<p>algoritmo "Tabuada_PARA2"</p>
 				<p>var</p>
@@ -223,7 +223,7 @@
 			
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe que neste exemplo o para foi executado de 1 até o valor armazenado na variavel num que neste caso foi 15.</p>
+				<p>Observe que neste exemplo, o para foi executado de 1 até o valor armazenado na variável num, que neste caso foi 15.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 
@@ -261,7 +261,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe que para fazer o decremento é necessario utilizar o "passo -1" pois por padrao o para...faça utiliza um incremento de +1.</p>
+				<p>Observe que para fazer o decremento é necessario utilizar o "passo -1" pois por padrão o para...faça utiliza um incremento de +1.</p>
 				<p>Veja no seguinte GIF o loop acontecendo e a variável j sendo decrementada de 10 até alcançar o valor de zero e o loop ser terminado.</p>
 
 			</div><!-- FIM paragrafo de texto -->
@@ -317,7 +317,7 @@
 				<p>A utilização deste tipo de estrutura de dados recebe diversos nomes, como: variáveis indexadas, variáveis compostas, variáveis subscritas, arranjos, vetores, matrizes, tabelas em memória ou arrays. Os nomes mais usados e que utilizaremos para estruturas homogêneas são: <b>matrizes</b> e <b>vetores </b>(matriz de uma linha e várias colunas).</p>
 				<p><b>Vetores:</b></p>
 				<p>Este tipo de estrutura em particular é também denominado por profissionais da área como matrizes unidimensionais. Sua utilização mais comum está vinculada à criação de tabelas. </p>
-				<p>Caracteriza-se por ser definida uma única variável vinculada dimensionada com um determinado tamanho. A dimensão de uma matriz é constituída por constantes inteiras e positivas. Os nomes dados às matrizes seguem as mesmas regras de nomes utilizados para indicar as variáveis simples.</p>
+				<p>Caracteriza-se por ser definida uma única variável vinculada e dimensionada com um determinado tamanho. A dimensão de uma matriz é constituída por constantes inteiras e positivas. Os nomes dados às matrizes seguem as mesmas regras de nomes utilizados para indicar as variáveis simples.</p>
 				<p>A sintaxe do comando de definição/declaração de vetores no VisuAlg é a seguinte:</p>
 				
 				
@@ -333,7 +333,7 @@
 				<p>Exemplo:</p>
 				<p>Var</p>
 				<p style="padding-left:3em">vet:vetor[1..5] de inteiro</p>
-				<p>Neste caso estamos criando um vetor que possui 5 posições, imagine como se casa posição fosse um vagão de trem e cada vagão é capaz de armazenar um valor do tipo declarado como se fosse uma variável normal.</p>
+				<p>Neste caso, estamos criando um vetor que possui 5 posições, imagine como se cada posição fosse um vagão de trem e cada vagão fosse capaz de armazenar um valor do tipo declarado, como se fosse uma variável normal.</p>
 				<p>Observe o seguinte GIF demostrando um vetor de 5 posições de inteiros, armazenando valores de inteiros em suas posições.</p>
 				
 			</div><!-- FIM paragrafo de texto -->
@@ -356,15 +356,15 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Operações Básicas com Vetores</b></p>
-				<p>Do mesmo modo que acontece com variáveis simples, também é possível operar com variáveis indexadas (matrizes). Contudo não é possível operar diretamente com o conjunto completo, mas com cada um de seus componentes isoladamente.</p>
-				<p>O acesso individual a cada componente de um vetor é realizado pela especificação de sua posição na mesma por meio do seu índice. No exemplo anterior foi definida uma variável vet capaz de armazenar 5 números inteiros. Para acessar um elemento deste vetor deve-se fornecer o nome do mesmo e o índice do componente desejado do vetor (um número de 1 a 5, neste caso).</p>
+				<p>Do mesmo modo que acontece com variáveis simples, também é possível operar com variáveis indexadas (matrizes). Contudo, não é possível operar diretamente com o conjunto completo, mas com cada um de seus componentes isoladamente.</p>
+				<p>O acesso individual a cada componente de um vetor é realizado pela especificação de sua posição na mesma por meio do seu índice. No exemplo anterior foi definida uma variável vet capaz de armazenar 5 números inteiros. Para acessar um elemento deste vetor, deve-se fornecer o nome do mesmo e o índice do componente desejado do vetor (um número de 1 a 5, neste caso).</p>
 				<p>Por exemplo, vet[1] indica o primeiro elemento do vetor, vet[2] indica o segundo elemento do vetor e vet[5] indica o último elemento do vetor.</p>
 				<p>Portanto, não é possível operar diretamente sobre vetores como um todo, mas apenas sobre seus componentes, um por vez. </p>
-				<p>Por exemplo, para somar dois vetores é necessário somar cada um de seus componentes dois a dois. Da mesma forma as operações de atribuição, leitura e escrita de vetores devem ser feitas elemento a elemento.</p>
+				<p>Por exemplo, para somar dois vetores é necessário somar cada um de seus componentes dois a dois. Da mesma forma, as operações de atribuição, leitura e escrita de vetores devem ser feitas elemento a elemento.</p>
 				<p><b>Atribuição de vetores:</b></p>
 				<p>Na aula sobre as instruções primitivas, o comando de atribuição foi definido como:</p>
 				<p>nome_da_variável := expressão</p>
-				<p>No caso de vetores (variáveis indexadas), além do nome da variável deve-se necessariamente fornecer também o índice do componente do vetor onde será armazenado o resultado da avaliação da expressão.</p>
+				<p>No caso de vetores (variáveis indexadas), além do nome da variável, deve-se, necessariamente fornecer também o índice do componente do vetor onde será armazenado o resultado da avaliação da expressão.</p>
 				<p><b>Exemplo: </b> <br>
 				vet[1]:= 15 <br>
 				vet[2]:= 150 <br>
@@ -375,9 +375,9 @@
 				<p>LEIA nome_da_variável [ índice ]</p>
 				<p><b>Exemplo:</b></p>
 				<p>Leia (vet[1])</p>
-				<p>Desta forma seria custoso ler ou atribuir valores ou até mesmo imprimir o conteúdo de um vetor um a um.</p>
-				<p>Portanto é utilizado dos laços contados (Para) a fim de efetuar a operação de leitura repetidas vezes, em cada uma delas lendo um determinado componente do vetor. </p>
-				<p>De fato está construção é muito comum quando se opera com vetores, devido à necessidade de se realizar uma mesma operação com os diversos componentes dos mesmos. Na verdade, são raras as situações que se deseja operar isoladamente com um único componente do vetor.</p>
+				<p>Desta forma, seria custoso ler ou atribuir valores ou até mesmo imprimir o conteúdo de um vetor um a um.</p>
+				<p>Portanto, é utilizado dos laços contados (Para), a fim de efetuar a operação de leitura repetidas vezes, em cada uma delas lendo um determinado componente do vetor. </p>
+				<p>De fato, esta construção é muito comum quando se opera com vetores, devido à necessidade de se realizar uma mesma operação com os diversos componentes dos mesmos. Na verdade, são raras as situações que se deseja operar isoladamente com um único componente do vetor.</p>
 				<p>O algoritmo a seguir exemplifica a operação de leitura de um vetor:</p>
 				<p><b>Exemplo 1:</b></p>
 				<p>algoritmo "exemplo_leitura_de_vetor"</p>
@@ -403,7 +403,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p>Veja na área das variáveis que as posições do vetor foram preenchidas de acordo com o que foi lido a partir da entrada do usuário. </p>
-				<p>Observe no seguinte GIF como as posições do vetor vão sendo preenchidas pelo usuário durante a execução.</p>
+				<p>Observe no seguinte GIF, como as posições do vetor vão sendo preenchidas pelo usuário durante a execução.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 
@@ -426,7 +426,7 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Escrita de Dados de Vetores:</b></p>
-				<p>A escrita de um vetor obedece à mesma sintaxe da instrução primitiva de saída de dados e também vale lembrar que, além do nome do vetor, deve-se também especificar por meio do índice o componente a ser escrito:</p>
+				<p>A escrita de um vetor obedece à mesma sintaxe da instrução primitiva de saída de dados, e também vale lembrar, que além do nome do vetor, deve-se também especificar por meio do índice o componente a ser escrito:</p>
 				<p>Escreva ( nome_da_variavel [ índice ])</p>
 				<p>O algoritmo a seguir exemplifica a operação de leitura e escrita de um vetor, utilizando a construção Para:</p>
 				<p><b>Exemplo 2:</b></p>
@@ -443,7 +443,7 @@
 				<p style="padding-left:6em">escreval(vet[i])</p>
 				<p style="padding-left:3em">  fimpara </p>
 				<p>fimalgoritmo</p>
-				<p>Veja que o primeiro para é responsável por fazer a leitura (preencher) o vetor, o segundo para é responsável por imprimir o conteúdo deste vetor.</p>
+				<p>Veja que o primeiro para é responsável por fazer a leitura, (preencher) o vetor, o segundo para é responsável por imprimir o conteúdo deste vetor.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 
@@ -465,7 +465,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Um exemplo mais interessante é mostrado a seguir, onde um vetor de dez números é lido e guardado no vetor números. Paralelamente, a soma destes números é calculada e mantida na variável soma, que posteriormente é escrita. Este algoritmo foi escrito de maneira amigável para o usuário pois mostra qual posição do vetor está sendo lida e escrita.</p>
+				<p>Um exemplo mais interessante é mostrado a seguir, onde um vetor de dez números é lido e guardado no vetor números. Paralelamente, a soma destes números é calculada e mantida na variável soma, que posteriormente é escrita. Este algoritmo foi escrito de maneira amigável para o usuário, pois mostra qual posição do vetor está sendo lida e escrita.</p>
 				<p><b>Exemplo 3:</b></p>
 				<p style="padding-left:0em">algoritmo "soma_de_vetor"</p>
 				<p style="padding-left:0em">var</p>
@@ -514,7 +514,7 @@
 				<p><b>Exemplos de Aplicação de Vetores:</b></p>
 				<p>O espectro de aplicação de vetores em algoritmos é muito extenso, mas normalmente os vetores são usados em duas tarefas muito importantes no processamento de dados: pesquisa e classificação.</p>
 				<p>A pesquisa consiste na verificação da existência de um valor dentro de um vetor. Trocando em miúdos, pesquisar um vetor consiste em procurar dentre seus componentes um determinado valor.</p>
-				<p>A classificação de um vetor consiste em arranjar seus componentes numa determinada ordem, segundo um critério específico. Por exemplo, este critério pode ser a ordem alfabética de um vetor de dados caractere, ou então a ordem crescente ou decrescente para um vetor de dados numéricos. Há vários métodos de classificação como o SelectionSort, BubbleSort, MergeSort, InsertSort, dentre outros.</p>
+				<p>A classificação de um vetor consiste em arranjar seus componentes numa determinada ordem, segundo um critério específico. Por exemplo, este critério pode ser a ordem alfabética de um vetor de dados caractere, ou então, a ordem crescente ou decrescente para um vetor de dados numéricos. Há vários métodos de classificação como o SelectionSort, BubbleSort, MergeSort, InsertSort, dentre outros.</p>
 				<p>Observe no seguinte GIF um vetor com 10 posições sendo ordenado pelo metodo InsertSort:</p>
 				
 			</div><!-- FIM paragrafo de texto -->
@@ -528,7 +528,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>O InsertSort se asemelha muito a forma como ordenamos cartas de baralho em nossas mãos: procuramos por uma carta de valor menor e colocamos ela a esquerda da mão.</p>
+				<p>O InsertSort se assemelha muito a forma como ordenamos cartas de baralho em nossas mãos: procuramos por uma carta de valor menor e colocamos ela a esquerda da mão.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 

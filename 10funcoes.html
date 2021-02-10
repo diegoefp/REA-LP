@@ -129,7 +129,7 @@
 				<p>A complexidade dos algoritmos está intimamente ligada à da aplicação a que se destinam. Em geral, problemas complicados exigem algoritmos extensos para sua solução.</p>
 				<p>Sempre é possível dividir problemas grandes e complicados em problemas menores e de solução mais simples. Assim, pode-se solucionar cada um destes pequenos problemas separadamente, criando algoritmos para tal (subalgoritmos ou subprogramas).</p>
 				<p>Posteriormente, pela justaposição destes subalgoritmos elabora-se “automaticamente” um algoritmo mais complexo e que soluciona o problema original. Esta metodologia de trabalho é conhecida como Método de Refinamentos Sucessivos, cujo estudo é assunto de cursos avançados sobre técnicas de programação.</p>
-				<p>Um subalgoritmo é um nome dado a um trecho de um algoritmo mais complexo e que, em geral, encerra em si próprio um pedaço da solução de um problema maior - o algoritmo a que ele está subordinado. Este conceito é essencial em Engenharia de Software.</p>
+				<p>Um subalgoritmo é um nome dado a um trecho de um algoritmo mais complexo e que em geral, encerra em si próprio, um pedaço da solução de um problema maior - o algoritmo a que ele está subordinado. Este conceito é essencial em Engenharia de Software.</p>
 															
 
 				<div class="clear"></div>
@@ -153,8 +153,8 @@
 				•	Modularização de sistemas, que facilita a manutenção de softwares e a reutilização de subalgoritmos já implementados.
 				</p>
 				<p>A ideia da reutilização de software tem sido adotada por muitos grupos de desenvolvimento de sistemas de computador, devido à economia de tempo e trabalho que proporcionam.</p>
-				<p>Seu princípio é o seguinte: um conjunto de algoritmos destinado a solucionar uma série de tarefas bastante corriqueiras é desenvolvido e vai sendo aumentado com o passar do tempo, com o acréscimo de novos algoritmos. </p>
-				<p>A este conjunto dá-se o nome de biblioteca. No desenvolvimento de novos sistemas, procura-se ao máximo basear sua concepção em subalgoritmos já existentes na biblioteca, de modo que a quantidade de software realmente novo que deve ser desenvolvido é minimizada.</p>
+				<p>Seu princípio é o seguinte: um conjunto de algoritmos destinados a solucionar uma série de tarefas bastante corriqueiras é desenvolvido, e vai sendo aumentado com o passar do tempo, com o acréscimo de novos algoritmos. </p>
+				<p>A este conjunto, dá-se o nome de biblioteca. No desenvolvimento de novos sistemas, procura-se ao máximo basear sua concepção em subalgoritmos já existentes na biblioteca, de modo que a quantidade de software realmente novo que deve ser desenvolvido é minimizada.</p>
 				<p>Muitas vezes os subalgoritmos, podem ser úteis para encerrar em si, uma certa sequência de comandos que é repetida várias vezes num algoritmo. Nestes casos, os subalgoritmos proporcionam uma diminuição do tamanho de algoritmos maiores.</p>
 				<p><b>Mecanismo de Funcionamento:</b></p>
 				<p>Um algoritmo completo é dividido num algoritmo principal e diversos subalgoritmos (tantos quantos forem necessários e/ou convenientes). </p>
@@ -168,25 +168,24 @@
 				<p style="padding-left:3em">corpo do algoritmo principal</p>
 				<p style="padding-left:0em">Fimalgoritmo</p>
 				<p>Durante a execução do algoritmo principal, quando se encontra um comando de invocação de um subalgoritmo, a execução do mesmo é interrompida. A seguir, passa-se à execução dos comandos do corpo do subalgoritmo. </p>
-				<p>Ao seu término, retoma-se a execução do algoritmo que o chamou (no caso, o algoritmo principal) no ponto onde foi interrompida (comando de chamada do subalgoritmo) e prossegue-se pela instrução imediatamente seguinte.</p>
+				<p>Ao seu término, retoma-se a execução do algoritmo que o chamou (no caso, o algoritmo principal), no ponto onde foi interrompida (comando de chamada do subalgoritmo), e prossegue-se pela instrução imediatamente seguinte.</p>
 				<p>Note, também, que é possível que um subalgoritmo chame outro subalgoritmo através do mesmo mecanismo.</p>
 				<p><b>Definição de Subalgoritmos:</b></p>
 				<p>A definição de um subalgoritmo consta de:</p>
 				<p style="padding-left:3em">• Um cabeçalho, onde estão definidos o nome e o tipo do subalgoritmo, bem como os seus parâmetros e variáveis locais; <br>
-					• Um corpo, onde se encontram as instruções (comandos) do subalgoritmo. <br>
-					• O nome de um subalgoritmo é o nome simbólico pelo qual ele é chamado por outro algoritmo. <br>
-					•	O corpo do subalgoritmo contém as instruções que são executadas cada vez que ele é invocado. <br>
+					• Um corpo, onde se encontram as instruções (comandos), do subalgoritmo; <br>
+					• O nome de um subalgoritmo é o nome simbólico pelo qual ele é chamado por outro algoritmo; <br>
+					•	O corpo do subalgoritmo contém as instruções que são executadas cada vez que ele é invocado; <br>
 					•	Variáveis locais são aquelas definidas dentro do próprio subalgoritmo e só podem ser utilizadas pelo mesmo.
 					</p>
 				<p><b>Parâmetros</b> são canais por onde os dados são transferidos pelo algoritmo chamador a um subalgoritmo, e vice-versa. </p>	
-				<p>Para que possa iniciar a execução das instruções em seu corpo, um subalgoritmo às vezes precisa receber dados do algoritmo que o chamou e, ao terminar sua tarefa, o subalgoritmo deve fornecer ao algoritmo chamador os resultados da mesma.</p>	
+				<p>Para que possa iniciar a execução das instruções em seu corpo, um subalgoritmo, às vezes, precisa receber dados do algoritmo que o chamou e, ao terminar sua tarefa, o subalgoritmo deve fornecer ao algoritmo chamador os resultados da mesma.</p>	
 				<p>Esta comunicação bidirecional pode ser feita de dois modos que serão estudados mais à frente: por meio de variáveis globais ou por meio da passagem de parâmetros.</p>	
-				<p>A quantidade dos parâmetros, sua sequência e respectivos tipos não podem mudar: devem estar de acordo com o que foi especificado na sua correspondente declaração.</p>	
+				<p>A quantidade dos parâmetros, sua sequência e respectivos tipos, não podem mudar: devem estar de acordo com o que foi especificado na sua correspondente declaração.</p>	
 				<p>O tipo de um subalgoritmo é definido em função do número de valores que o subalgoritmo retorna ao algoritmo que o chamou. Segundo esta classificação, os algoritmos podem ser de dois tipos:</p>	
 				<p style="padding-left:3em"><b>•	Funções:</b> que retornam um, e somente um, valor ao algoritmo chamador; <br>
-					<b>• Procedimentos:</b> que retornam zero (nenhum) ou mais valores ao algoritmo chamador
-				</p>	
-				<p>Na realidade, a tarefa desempenhada por um subalgoritmo do tipo função pode perfeitamente ser feita por outro do tipo procedimento (o primeiro é um caso particular deste). Esta diferenciação é feita por razões históricas, ou, então, pelo grande número de subalgoritmos que se encaixam na categoria de funções.</p>	
+					<b>• Procedimentos:</b> que retornam zero (nenhum), ou mais valores ao algoritmo chamador.</p>	
+				<p>Na realidade, a tarefa desempenhada por um subalgoritmo do tipo função, pode perfeitamente ser feita por outro do tipo procedimento (o primeiro é um caso particular deste). Esta diferenciação é feita por razões históricas, ou, então, pelo grande número de subalgoritmos que se encaixam na categoria de funções.</p>	
 							
 				
 
@@ -219,7 +218,7 @@
 						• Seção de Comandos: é o conjunto de instruções do corpo da função.
 					</p>
 				<p>A invocação de uma função é feita pelo simples aparecimento do nome da mesma, seguido pelos respectivos parâmetros entre parênteses, dentro de uma expressão. A função é executada e, ao seu término, o trecho do comando que a invocou é substituído pelo valor retornado pela mesma dentro da expressão em que se encontra, e a avaliação desta prossegue normalmente.</p>
-				<p>Dentro de uma função, e somente neste caso, o comando Retorne (expressão) é usado para retornar o valor calculado pela mesma. </p>
+				<p>Dentro de uma função, e somente neste caso, o comando Retorne (expressão), é usado para retornar o valor calculado pela mesma. </p>
 				<p>Ao encontrar este comando, a expressão entre parênteses é avaliada, a execução da função é terminada neste ponto e o valor da expressão é retornado ao algoritmo chamador. </p>
 				<p>Vale lembrar que uma expressão pode ser uma simples constante, uma variável ou uma combinação das duas por meio de operadores. Esta expressão deve ser do mesmo tipo que o valor retornado pela função.</p>
 				<p><b>Exemplo1:</b></p>
@@ -232,7 +231,7 @@
 					retorne aux
 				</p>
 				<p style="padding-left:0em">fimfuncao</p>
-				<p>Esta função cria uma variável local chamada aux, então ela recebe os valores de m e n (que são variáveis globais) e então retorna o valor de aux (que agora é a soma de m e n) para o algoritmo principal.</p>
+				<p>Esta função cria uma variável local chamada aux, então ela recebe os valores de m e n (que são variáveis globais), e então retorna o valor de aux (que agora é a soma de m e n), para o algoritmo principal.</p>
 				<p>Veja e execute o algoritmo no VisuAlg:</p>
 				<p style="padding-left:0em">algoritmo "funcao_soma_sem_parametros"</p>
 				<p style="padding-left:0em">var  //declaração das variaveis globais</p>
@@ -299,8 +298,8 @@
 				<p style="padding-left:0em">fimalgoritmo</p>
 				<p>Observe que a ordem dos parâmetros é importante, neste exemplo temos a chamada da função soma passando os parâmetros da seguinte forma: soma(<span style="color: green; font-weight: bold">m</span>,<span style="color: blue; font-weight: bold">n</span>) .</p>
 				<p>Na declaração da função temos:  funcao soma (<span style="color: green; font-weight: bold">x</span>,<span style="color: blue; font-weight: bold">y</span>: inteiro): inteiro.</p>
-				<p>Portanto na substituição dos valores por parâmetros, a variável <span style="color: green; font-weight: bold">x</span> passara a ter o valor armazenado na variável <span style="color: green; font-weight: bold">m</span> e a variável <span style="color: blue; font-weight: bold">y</span> passara a ter o valor armazenado na variável <span style="color: blue; font-weight: bold">n</span>.</p>
-				<p>Observe no seguinte GIF o fluxo do algoritmo sendo direcionado para a função quando ela é chamada e a criação das variáveis locais x e y pertencentes apenas a função soma.</p>
+				<p>Portanto, na substituição dos valores por parâmetros, a variável <span style="color: green; font-weight: bold">x</span> passará a ter o valor armazenado na variável <span style="color: green; font-weight: bold">m</span> e a variável <span style="color: blue; font-weight: bold">y</span> passará a ter o valor armazenado na variável <span style="color: blue; font-weight: bold">n</span>.</p>
+				<p>Observe no seguinte GIF, o fluxo do algoritmo sendo direcionado para a função quando ela é chamada, e a criação das variáveis locais x e y, pertencentes apenas a função soma.</p>
 				
 
 			</div><!-- FIM paragrafo de texto -->
@@ -369,9 +368,9 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Procedimentos:</b></p>
-				<p>Um procedimento é um subalgoritmo que retorna zero (nenhum) ou mais valores ao subalgoritmo chamador. </p>
+				<p>Um procedimento é um subalgoritmo que retorna zero (nenhum), ou mais valores ao subalgoritmo chamador. </p>
 				<p>Estes valores são sempre retornados por meio dos parâmetros ou de variáveis globais, mas nunca explicitamente, como no caso de funções, ou seja, não possuem o comando retorne. Portanto, a chamada de um procedimento nunca surge no meio de expressões, como no caso de funções.</p>
-				<p>Pelo contrário, a chamada de procedimentos só é feita em comandos isolados dentro de um algoritmo, como as instruções de entrada (Leia) e saída (Escreva) de dados.</p>
+				<p>Pelo contrário, a chamada de procedimentos só é feita em comandos isolados dentro de um algoritmo, como as instruções de entrada (Leia), e saída (Escreva), de dados.</p>
 				<p>Sua declaração, que deve estar entre o final da declaração de variáveis globais e a linha início do programa principal, segue a sintaxe abaixo:</p>
 				<p>procedimento nome-de-procedimento [(sequência-de-declarações-de-parâmetros)]</p>
 				<p style="padding-left:3em">// Seção de Declarações Internas</p>
@@ -384,7 +383,7 @@
 				•	variáveis locais: são as definições das variáveis locais ao procedimento. Sua forma é análoga à da definição de variáveis num algoritmo; <br>
 				•	Seção de Comandos:  é o conjunto de instruções do corpo do procedimento, que é executado toda vez que o mesmo é invocado. <br>
 				</p>
-				<p>Um procedimento é chamado/invocado de forma análoga as funções, uma diferença é que como o procedimento não retorna um valor diretamente não é preciso declarar o seu tipo como nas funções.</p>
+				<p>Um procedimento é chamado/invocado de forma análoga as funções, uma diferença é que como o procedimento não retorna um valor diretamente, não é preciso declarar o seu tipo como nas funções.</p>
 				<p><b>Exemplo 1:</b></p>
 				<p>Procedimento de soma sem parâmetros:</p>
 				<p style="padding-left:0em">algoritmo "procedimento_soma_sem_parametros"</p>
@@ -419,7 +418,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe que o procedimento ficou responsável por somar os dois valores digitados no programa principal (variáveis globais) e imprimir o seu resultado na tela.</p>
+				<p>Observe, que o procedimento ficou responsável por somar os dois valores digitados no programa principal (variáveis globais), e imprimir o seu resultado na tela.</p>
 
 			</div><!-- FIM paragrafo de texto -->
 
@@ -434,7 +433,7 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Da mesma forma o procedimento poderia ter sido executado através de um procedimento com passagem de parâmetros</p>
+				<p>Da mesma forma, o procedimento poderia ter sido executado através de um procedimento com passagem de parâmetros</p>
 				<p><b>Exemplo 2:</b></p>
 				<p>Procedimento de soma com parâmetros:</p>
 				<p style="padding-left:0em">algoritmo "procedimento_soma_COM_parametros"</p>
@@ -454,7 +453,7 @@
 				      soma(m,n)      //chamada do procedimento
 				</p>
 				<p>fimalgoritmo</p>
-				<p>Observe que o procedimento recebe como parametros os valores digitados pelo usuario no programa principal e estes valores são atribuidos as variáveis x e y, então é realizada a operação e o resultado mostrado na tela. </p>
+				<p>Observe que o procedimento recebe como parâmetros os valores digitados pelo usuário, no programa principal, e estes valores são atribuídos às variáveis x e y, então, é realizada a operação e o resultado é mostrado na tela. </p>
 				
  
 
@@ -513,9 +512,9 @@
 
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
-				<p>Observe que o algoritmo principal apenas chama os procedimentos, agora reflita em como os procedimentos podem otimizar um algoritmo. </p>
-				<p>Toda vez que o usuário precisar ler ou escrever um vetor basta apenas chamar o procedimento, não sendo necessário escrever todos os comandos novamente.</p>
-				<p>Observe no seguinte GIF o fluxo do algoritmo sendo alterado para os procedimentos quando chamados.</p>
+				<p>Observe, que o algoritmo principal apenas chama os procedimentos, agora reflita, em como os procedimentos podem otimizar um algoritmo. </p>
+				<p>Toda vez que o usuário precisar ler ou escrever um vetor, basta apenas chamar o procedimento, não sendo necessário escrever todos os comandos novamente.</p>
+				<p>Observe no seguinte GIF, o fluxo do algoritmo sendo alterado para os procedimentos quando chamados.</p>
 			
 
 			</div><!-- FIM paragrafo de texto -->
@@ -537,9 +536,9 @@
 			<div class="paragrafo__aula__single">  <!-- paragrafo de texto  -->
 				
 				<p><b>Passagem de Parâmetros por Referência:</b></p>
-				<p>Há ainda uma outra forma de passagem de parâmetros para subprogramas: é a passagem por referência. Neste caso, o subprograma não recebe apenas um valor, mas sim o endereço de uma variável global.</p>
+				<p>Há ainda, uma outra forma de passagem de parâmetros para subprogramas: é a passagem por referência. Neste caso, o subprograma não recebe apenas um valor, mas sim o endereço de uma variável global.</p>
 				<p>Portanto, qualquer modificação que for realizada no conteúdo deste parâmetro afetará também a variável global que está associada a ele. Durante a execução do subprograma, os parâmetros passados por referência são análogos às variáveis globais.</p>
-				<p>No VisuAlg, essa passagem é feita através da palavra var na declaração do parâmetro. Voltando ao exemplo da soma, o procedimento abaixo realiza a mesma tarefa utilizando passagem de parâmetros por referência:</p>
+				<p>No VisuAlg, essa passagem é feita através da palavra var na declaração do parâmetro. Voltando ao exemplo da soma, o procedimento abaixo, realiza a mesma tarefa, utilizando passagem de parâmetros por referência:</p>
 				<p>procedimento soma (x,y: inteiro; var result:inteiro)</p>
 				<p>inicio</p>
 				<p>result:=x+y</p>
@@ -561,7 +560,7 @@
 				      escreval ("o valor da soma dos valores é: ",res)
 				</p>
 				<p style="padding-left:0em">fimalgoritmo</p>
-				<p>Neste exemplo a variável res do algoritmo principal, foi passada por referência como parâmetro da variável result do procedimento soma, portanto qualquer modificação a variável result, modificará a variável res no algoritmo principal.</p>
+				<p>Neste exemplo, a variável res do algoritmo principal, foi passada por referência como parâmetro da variável result do procedimento soma, portanto qualquer modificação a variável result, modificará a variável res no algoritmo principal.</p>
 								
 
 			</div><!-- FIM paragrafo de texto -->
@@ -610,7 +609,7 @@
 				      escreval ("o valor do fatorial de: ",num," é: ",fat)
 				</p>
 				<p style="padding-left:0em">fimalgoritmo</p>
-				<p>Obseve no seguinte GIF o fluxo do algoritmo sendo alterado para a função e as variaveis locais sendo criadas a cada chamada da função.</p>
+				<p>Obseve no seguinte GIF, o fluxo do algoritmo sendo alterado para a função e as variáveis locais sendo criadas a cada chamada da função.</p>
 
 
 
